@@ -1,0 +1,359 @@
+league,season,team_tm,tm_club_id,tm_slug,squad_size,avg_age_tm,foreigners,avg_market_value_eur_m,total_market_value_eur_m
+premier-league,2015-2016,Chelsea FC,631,fc-chelsea,40,25.2,31,13.84,553.5
+premier-league,2015-2016,Manchester City,281,manchester-city,38,25.9,27,13.14,499.35
+premier-league,2015-2016,Arsenal FC,11,fc-arsenal,41,25.2,30,11.17,457.85
+premier-league,2015-2016,Manchester United,985,manchester-united,44,24.1,27,10.0,439.85
+premier-league,2015-2016,Liverpool FC,31,fc-liverpool,44,23.9,27,8.53,375.25
+premier-league,2015-2016,Tottenham Hotspur,148,tottenham-hotspur,31,24.2,16,12.0,371.85
+premier-league,2015-2016,Everton FC,29,fc-everton,39,26.1,22,6.41,249.85
+premier-league,2015-2016,Southampton FC,180,fc-southampton,35,25.6,20,6.44,225.5
+premier-league,2015-2016,West Ham United,379,west-ham-united,50,24.7,28,4.03,201.33
+premier-league,2015-2016,Newcastle United,762,newcastle-united,42,25.2,28,4.71,198.0
+premier-league,2015-2016,Leicester City,1003,leicester-city,35,27.3,21,4.6,161.1
+premier-league,2015-2016,Stoke City,512,stoke-city,31,27.9,24,4.74,147.0
+premier-league,2015-2016,Swansea City,2288,swansea-city,36,26.4,27,4.05,145.8
+premier-league,2015-2016,Watford FC,1010,fc-watford,39,27.8,35,3.51,137.0
+premier-league,2015-2016,Crystal Palace,873,crystal-palace,38,27.2,20,3.57,135.7
+premier-league,2015-2016,Aston Villa,405,aston-villa,44,25.1,25,2.68,117.95
+premier-league,2015-2016,Norwich City,1123,norwich-city,41,27.0,22,2.85,116.9
+premier-league,2015-2016,West Bromwich Albion,984,west-bromwich-albion,35,26.9,22,3.23,113.1
+premier-league,2015-2016,Sunderland AFC,289,afc-sunderland,42,27.0,27,2.65,111.25
+premier-league,2015-2016,AFC Bournemouth,989,afc-bournemouth,49,25.6,22,2.04,99.9
+premier-league,2016-2017,Chelsea FC,631,fc-chelsea,49,25.4,41,14.01,686.7
+premier-league,2016-2017,Manchester City,281,manchester-city,35,26.9,29,16.47,576.5
+premier-league,2016-2017,Tottenham Hotspur,148,tottenham-hotspur,38,24.1,20,14.31,543.65
+premier-league,2016-2017,Arsenal FC,11,fc-arsenal,42,25.3,26,12.9,542.0
+premier-league,2016-2017,Manchester United,985,manchester-united,42,25.0,26,12.65,531.45
+premier-league,2016-2017,Liverpool FC,31,fc-liverpool,38,24.9,24,11.2,425.65
+premier-league,2016-2017,Everton FC,29,fc-everton,39,26.4,26,7.98,311.25
+premier-league,2016-2017,West Ham United,379,west-ham-united,44,25.1,29,6.21,273.05
+premier-league,2016-2017,Southampton FC,180,fc-southampton,36,25.9,19,7.33,263.75
+premier-league,2016-2017,Crystal Palace,873,crystal-palace,45,26.6,27,5.08,228.43
+premier-league,2016-2017,Leicester City,1003,leicester-city,31,27.1,22,7.05,218.65
+premier-league,2016-2017,Stoke City,512,stoke-city,34,27.7,27,5.47,186.0
+premier-league,2016-2017,Watford FC,1010,fc-watford,46,27.3,37,3.82,175.65
+premier-league,2016-2017,Swansea City,2288,swansea-city,37,27.4,28,4.25,157.1
+premier-league,2016-2017,Hull City,3008,hull-city,42,26.5,24,3.23,135.85
+premier-league,2016-2017,Sunderland AFC,289,afc-sunderland,42,25.8,27,3.14,132.0
+premier-league,2016-2017,AFC Bournemouth,989,afc-bournemouth,41,24.8,16,3.21,131.6
+premier-league,2016-2017,Middlesbrough FC,641,fc-middlesbrough,35,27.9,21,3.68,128.8
+premier-league,2016-2017,West Bromwich Albion,984,west-bromwich-albion,30,27.7,18,4.11,123.2
+premier-league,2016-2017,Burnley FC,1132,fc-burnley,36,27.2,16,2.98,107.18
+premier-league,2017-2018,Manchester City,281,manchester-city,32,25.5,22,31.53,1010.0
+premier-league,2017-2018,Chelsea FC,631,fc-chelsea,46,25.3,33,19.22,884.25
+premier-league,2017-2018,Liverpool FC,31,fc-liverpool,35,25.4,21,24.5,857.5
+premier-league,2017-2018,Manchester United,985,manchester-united,35,26.6,23,24.27,849.5
+premier-league,2017-2018,Tottenham Hotspur,148,tottenham-hotspur,34,25.2,22,24.4,829.6
+premier-league,2017-2018,Arsenal FC,11,fc-arsenal,45,25.4,27,15.42,694.0
+premier-league,2017-2018,Everton FC,29,fc-everton,48,25.4,31,7.94,381.25
+premier-league,2017-2018,Leicester City,1003,leicester-city,34,27.0,23,8.95,304.25
+premier-league,2017-2018,Southampton FC,180,fc-southampton,29,26.4,16,10.24,297.0
+premier-league,2017-2018,West Ham United,379,west-ham-united,42,25.8,26,6.38,268.1
+premier-league,2017-2018,Crystal Palace,873,crystal-palace,41,26.3,24,5.38,220.73
+premier-league,2017-2018,Newcastle United,762,newcastle-united,37,25.9,27,5.63,208.28
+premier-league,2017-2018,Watford FC,1010,fc-watford,37,27.4,28,5.3,196.0
+premier-league,2017-2018,Stoke City,512,stoke-city,35,26.8,27,5.5,192.45
+premier-league,2017-2018,Burnley FC,1132,fc-burnley,30,28.3,16,5.64,169.3
+premier-league,2017-2018,West Bromwich Albion,984,west-bromwich-albion,33,27.0,17,5.03,165.95
+premier-league,2017-2018,Swansea City,2288,swansea-city,36,26.8,25,4.6,165.49
+premier-league,2017-2018,Brighton & Hove Albion,1237,brighton-amp-hove-albion,39,27.3,27,3.8,148.2
+premier-league,2017-2018,AFC Bournemouth,989,afc-bournemouth,35,26.4,14,4.13,144.5
+premier-league,2017-2018,Huddersfield Town,1110,huddersfield-town,35,26.1,19,3.03,106.05
+premier-league,2018-2019,Manchester City,281,manchester-city,47,24.6,36,25.61,1200.0
+premier-league,2018-2019,Liverpool FC,31,fc-liverpool,39,25.2,25,30.06,1170.0
+premier-league,2018-2019,Chelsea FC,631,fc-chelsea,54,26.2,40,21.6,1170.0
+premier-league,2018-2019,Tottenham Hotspur,148,tottenham-hotspur,34,26.0,20,26.43,898.6
+premier-league,2018-2019,Manchester United,985,manchester-united,36,25.9,23,22.16,797.6
+premier-league,2018-2019,Arsenal FC,11,fc-arsenal,42,25.4,28,15.69,659.05
+premier-league,2018-2019,Everton FC,29,fc-everton,40,26.6,29,13.23,529.1
+premier-league,2018-2019,Leicester City,1003,leicester-city,37,26.9,28,11.73,434.1
+premier-league,2018-2019,West Ham United,379,west-ham-united,37,27.1,24,9.7,359.0
+premier-league,2018-2019,AFC Bournemouth,989,afc-bournemouth,37,26.2,17,8.38,310.0
+premier-league,2018-2019,Southampton FC,180,fc-southampton,40,25.5,20,7.64,305.4
+premier-league,2018-2019,Wolverhampton Wanderers,543,wolverhampton-wanderers,40,24.5,26,7.57,302.9
+premier-league,2018-2019,Crystal Palace,873,crystal-palace,36,26.9,22,8.03,289.0
+premier-league,2018-2019,Fulham FC,931,fc-fulham,33,26.2,26,7.7,254.25
+premier-league,2018-2019,Newcastle United,762,newcastle-united,37,26.6,25,6.61,244.65
+premier-league,2018-2019,Watford FC,1010,fc-watford,39,26.7,32,6.13,239.1
+premier-league,2018-2019,Burnley FC,1132,fc-burnley,33,28.6,14,5.98,197.25
+premier-league,2018-2019,Brighton & Hove Albion,1237,brighton-amp-hove-albion,41,26.3,29,4.74,194.35
+premier-league,2018-2019,Huddersfield Town,1110,huddersfield-town,33,25.8,21,4.17,137.45
+premier-league,2018-2019,Cardiff City,603,cardiff-city,35,27.8,21,3.23,113.0
+premier-league,2019-2020,Manchester City,281,manchester-city,35,25.4,25,29.96,1050.0
+premier-league,2019-2020,Liverpool FC,31,fc-liverpool,56,23.8,32,17.9,1000.0
+premier-league,2019-2020,Tottenham Hotspur,148,tottenham-hotspur,36,25.3,23,22.41,806.8
+premier-league,2019-2020,Chelsea FC,631,fc-chelsea,36,24.7,23,19.61,705.85
+premier-league,2019-2020,Manchester United,985,manchester-united,43,24.4,27,15.59,670.45
+premier-league,2019-2020,Arsenal FC,11,fc-arsenal,38,24.8,24,15.99,607.65
+premier-league,2019-2020,Everton FC,29,fc-everton,35,26.5,22,12.02,420.55
+premier-league,2019-2020,Leicester City,1003,leicester-city,32,26.4,21,12.85,411.1
+premier-league,2019-2020,Wolverhampton Wanderers,543,wolverhampton-wanderers,44,23.6,30,7.28,320.33
+premier-league,2019-2020,West Ham United,379,west-ham-united,38,27.0,27,7.99,303.6
+premier-league,2019-2020,AFC Bournemouth,989,afc-bournemouth,39,25.4,17,6.98,272.18
+premier-league,2019-2020,Newcastle United,762,newcastle-united,41,26.6,25,6.16,252.48
+premier-league,2019-2020,Aston Villa,405,aston-villa,38,26.2,22,6.1,231.7
+premier-league,2019-2020,Southampton FC,180,fc-southampton,36,25.0,20,5.85,210.75
+premier-league,2019-2020,Brighton & Hove Albion,1237,brighton-amp-hove-albion,45,25.3,29,4.46,200.78
+premier-league,2019-2020,Watford FC,1010,fc-watford,43,26.2,27,4.64,199.6
+premier-league,2019-2020,Crystal Palace,873,crystal-palace,33,27.4,18,5.74,189.33
+premier-league,2019-2020,Burnley FC,1132,fc-burnley,35,26.8,12,4.68,163.88
+premier-league,2019-2020,Norwich City,1123,norwich-city,38,26.0,25,3.82,145.33
+premier-league,2019-2020,Sheffield United,350,sheffield-united,34,27.9,16,4.08,138.6
+premier-league,2020-2021,Manchester City,281,manchester-city,36,25.3,23,29.01,1040.0
+premier-league,2020-2021,Liverpool FC,31,fc-liverpool,43,24.9,28,22.55,969.65
+premier-league,2020-2021,Chelsea FC,631,fc-chelsea,39,25.7,23,22.8,889.2
+premier-league,2020-2021,Manchester United,985,manchester-united,39,25.4,26,19.74,770.05
+premier-league,2020-2021,Tottenham Hotspur,148,tottenham-hotspur,41,25.2,24,17.16,703.5
+premier-league,2020-2021,Arsenal FC,11,fc-arsenal,42,24.9,28,14.74,619.25
+premier-league,2020-2021,Everton FC,29,fc-everton,44,25.2,27,11.62,511.2
+premier-league,2020-2021,Leicester City,1003,leicester-city,40,25.8,27,12.77,510.6
+premier-league,2020-2021,Wolverhampton Wanderers,543,wolverhampton-wanderers,38,24.4,32,11.85,450.3
+premier-league,2020-2021,Aston Villa,405,aston-villa,53,23.9,25,8.13,430.7
+premier-league,2020-2021,West Ham United,379,west-ham-united,40,26.8,24,8.41,336.4
+premier-league,2020-2021,Brighton & Hove Albion,1237,brighton-amp-hove-albion,46,24.9,30,6.31,290.4
+premier-league,2020-2021,Southampton FC,180,fc-southampton,39,25.0,22,7.25,282.8
+premier-league,2020-2021,Newcastle United,762,newcastle-united,33,27.4,19,7.74,255.35
+premier-league,2020-2021,Fulham FC,931,fc-fulham,38,27.0,30,6.31,239.75
+premier-league,2020-2021,Leeds United,399,leeds-united,39,25.1,24,6.11,238.1
+premier-league,2020-2021,Crystal Palace,873,crystal-palace,36,28.2,19,5.38,193.85
+premier-league,2020-2021,Sheffield United,350,sheffield-united,40,25.4,16,3.75,149.85
+premier-league,2020-2021,West Bromwich Albion,984,west-bromwich-albion,43,26.6,18,3.28,141.15
+premier-league,2020-2021,Burnley FC,1132,fc-burnley,32,27.1,11,4.13,132.3
+premier-league,2021-2022,Manchester City,281,manchester-city,39,24.7,23,25.74,1000.0
+premier-league,2021-2022,Liverpool FC,31,fc-liverpool,49,24.5,29,18.75,918.9
+premier-league,2021-2022,Chelsea FC,631,fc-chelsea,44,25.6,27,20.78,914.5
+premier-league,2021-2022,Manchester United,985,manchester-united,43,26.0,29,17.89,769.15
+premier-league,2021-2022,Tottenham Hotspur,148,tottenham-hotspur,45,24.0,26,15.32,689.35
+premier-league,2021-2022,Arsenal FC,11,fc-arsenal,41,24.0,26,14.95,613.05
+premier-league,2021-2022,Leicester City,1003,leicester-city,40,25.7,26,13.16,526.55
+premier-league,2021-2022,Aston Villa,405,aston-villa,44,24.8,22,11.09,487.75
+premier-league,2021-2022,Everton FC,29,fc-everton,42,26.0,24,11.41,479.05
+premier-league,2021-2022,Wolverhampton Wanderers,543,wolverhampton-wanderers,38,24.8,30,9.92,376.95
+premier-league,2021-2022,West Ham United,379,west-ham-united,37,26.3,20,9.59,354.9
+premier-league,2021-2022,Brighton & Hove Albion,1237,brighton-amp-hove-albion,43,24.6,31,7.4,318.0
+premier-league,2021-2022,Newcastle United,762,newcastle-united,34,27.9,19,9.23,313.9
+premier-league,2021-2022,Leeds United,399,leeds-united,35,24.0,20,8.56,299.45
+premier-league,2021-2022,Southampton FC,180,fc-southampton,33,25.6,19,8.31,274.3
+premier-league,2021-2022,Brentford FC,1148,fc-brentford,38,24.7,28,7.19,273.3
+premier-league,2021-2022,Crystal Palace,873,crystal-palace,33,26.5,17,8.21,271.05
+premier-league,2021-2022,Norwich City,1123,norwich-city,45,24.7,29,3.63,163.2
+premier-league,2021-2022,Watford FC,1010,fc-watford,47,26.4,36,3.32,156.2
+premier-league,2021-2022,Burnley FC,1132,fc-burnley,35,27.9,16,3.94,137.85
+premier-league,2022-2023,Manchester City,281,manchester-city,34,26.0,21,33.7,1150.0
+premier-league,2022-2023,Arsenal FC,11,fc-arsenal,42,24.0,25,23.83,1000.0
+premier-league,2022-2023,Chelsea FC,631,fc-chelsea,43,25.2,29,23.14,994.95
+premier-league,2022-2023,Manchester United,985,manchester-united,48,25.4,30,17.66,847.75
+premier-league,2022-2023,Liverpool FC,31,fc-liverpool,39,25.6,24,20.82,811.85
+premier-league,2022-2023,Tottenham Hotspur,148,tottenham-hotspur,34,25.9,21,19.09,649.1
+premier-league,2022-2023,Newcastle United,762,newcastle-united,38,28.3,22,14.25,541.6
+premier-league,2022-2023,Brighton & Hove Albion,1237,brighton-amp-hove-albion,42,24.1,28,12.61,529.8
+premier-league,2022-2023,Aston Villa,405,aston-villa,43,25.4,23,11.85,509.55
+premier-league,2022-2023,Wolverhampton Wanderers,543,wolverhampton-wanderers,43,25.8,34,11.57,497.65
+premier-league,2022-2023,Leicester City,1003,leicester-city,38,26.4,25,12.91,490.7
+premier-league,2022-2023,West Ham United,379,west-ham-united,44,25.4,25,10.58,465.6
+premier-league,2022-2023,Southampton FC,180,fc-southampton,46,24.8,25,9.13,419.95
+premier-league,2022-2023,Everton FC,29,fc-everton,40,26.9,21,10.33,413.15
+premier-league,2022-2023,Nottingham Forest,703,nottingham-forest,50,26.6,29,7.53,376.25
+premier-league,2022-2023,Brentford FC,1148,fc-brentford,36,25.3,27,10.31,371.2
+premier-league,2022-2023,Leeds United,399,leeds-united,47,24.0,31,7.34,345.15
+premier-league,2022-2023,Crystal Palace,873,crystal-palace,39,25.4,20,8.28,323.05
+premier-league,2022-2023,Fulham FC,931,fc-fulham,47,25.9,35,6.28,295.1
+premier-league,2022-2023,AFC Bournemouth,989,afc-bournemouth,47,25.0,23,6.11,287.2
+premier-league,2023-2024,Manchester City,281,manchester-city,36,25.7,21,40.63,1460.0
+premier-league,2023-2024,Arsenal FC,11,fc-arsenal,40,24.6,24,30.08,1200.0
+premier-league,2023-2024,Chelsea FC,631,fc-chelsea,56,22.2,27,18.1,1010.0
+premier-league,2023-2024,Liverpool FC,31,fc-liverpool,45,24.2,30,21.24,955.65
+premier-league,2023-2024,Tottenham Hotspur,148,tottenham-hotspur,41,25.6,29,20.45,838.5
+premier-league,2023-2024,Manchester United,985,manchester-united,46,24.9,28,17.57,808.35
+premier-league,2023-2024,Aston Villa,405,aston-villa,45,25.0,23,15.77,709.65
+premier-league,2023-2024,Newcastle United,762,newcastle-united,45,26.3,21,14.49,652.25
+premier-league,2023-2024,Brighton & Hove Albion,1237,brighton-amp-hove-albion,49,24.2,33,10.7,524.4
+premier-league,2023-2024,Nottingham Forest,703,nottingham-forest,46,26.6,36,10.9,501.35
+premier-league,2023-2024,West Ham United,379,west-ham-united,36,26.6,20,13.54,487.5
+premier-league,2023-2024,Crystal Palace,873,crystal-palace,40,25.1,18,11.16,446.58
+premier-league,2023-2024,Wolverhampton Wanderers,543,wolverhampton-wanderers,47,23.9,32,9.42,442.73
+premier-league,2023-2024,Brentford FC,1148,fc-brentford,42,25.0,30,10.21,428.78
+premier-league,2023-2024,AFC Bournemouth,989,afc-bournemouth,42,25.7,26,9.57,401.75
+premier-league,2023-2024,Everton FC,29,fc-everton,34,26.8,16,11.52,391.75
+premier-league,2023-2024,Fulham FC,931,fc-fulham,35,26.9,31,10.98,384.35
+premier-league,2023-2024,Burnley FC,1132,fc-burnley,39,25.3,30,7.01,273.48
+premier-league,2023-2024,Sheffield United,350,sheffield-united,45,24.7,27,3.39,152.35
+premier-league,2023-2024,Luton Town,1031,luton-town,46,25.7,22,3.06,140.9
+ligue-1,2015-2016,Paris Saint-Germain,583,fc-paris-saint-germain,35,25.4,20,12.47,436.3
+ligue-1,2015-2016,AS Monaco,162,as-monaco,39,23.8,26,5.83,227.4
+ligue-1,2015-2016,Olympique Lyon,1041,olympique-lyon,33,25.5,15,5.04,166.3
+ligue-1,2015-2016,Olympique Marseille,244,olympique-marseille,38,24.4,23,3.41,129.5
+ligue-1,2015-2016,AS Saint-Étienne,618,as-saint-etienne,40,25.6,17,2.43,97.2
+ligue-1,2015-2016,Stade Rennais FC,273,fc-stade-rennes,38,25.1,23,2.48,94.15
+ligue-1,2015-2016,FC Girondins Bordeaux,40,fc-girondins-bordeaux,42,23.9,25,2.16,90.7
+ligue-1,2015-2016,OGC Nice,417,ogc-nizza,35,23.9,13,2.03,70.95
+ligue-1,2015-2016,LOSC Lille,1082,losc-lille,34,26.0,18,2.08,70.8
+ligue-1,2015-2016,FC Lorient,1158,fc-lorient,35,25.2,20,1.66,58.05
+ligue-1,2015-2016,Montpellier HSC,969,montpellier-hsc,32,26.3,18,1.39,44.4
+ligue-1,2015-2016,Stade Reims,1421,stade-reims,35,26.2,19,1.23,42.95
+ligue-1,2015-2016,FC Toulouse,415,fc-toulouse,32,24.6,22,1.34,42.9
+ligue-1,2015-2016,FC Nantes,995,fc-nantes,32,25.3,18,1.23,39.3
+ligue-1,2015-2016,SM Caen,1162,sm-caen,30,26.0,14,1.23,36.8
+ligue-1,2015-2016,EA Guingamp,855,ea-guingamp,31,27.4,11,1.08,33.5
+ligue-1,2015-2016,Angers SCO,1420,sco-angers,34,27.8,19,0.9510000000000001,32.35
+ligue-1,2015-2016,ESTAC Troyes,1095,es-troyes-ac,37,26.7,17,0.8300000000000001,30.7
+ligue-1,2015-2016,SC Bastia,595,sc-bastia,31,26.3,15,0.782,24.25
+ligue-1,2015-2016,GFC Ajaccio,3558,gfc-ajaccio,30,26.2,12,0.613,18.4
+ligue-1,2016-2017,Paris Saint-Germain,583,fc-paris-saint-germain,39,25.0,22,13.31,519.0
+ligue-1,2016-2017,AS Monaco,162,as-monaco,47,23.7,32,6.59,309.55
+ligue-1,2016-2017,Olympique Lyon,1041,olympique-lyon,34,24.1,16,6.22,211.35
+ligue-1,2016-2017,OGC Nice,417,ogc-nizza,39,24.0,16,3.41,132.8
+ligue-1,2016-2017,Olympique Marseille,244,olympique-marseille,33,26.2,13,3.63,119.65
+ligue-1,2016-2017,FC Girondins Bordeaux,40,fc-girondins-bordeaux,36,25.0,22,2.47,88.9
+ligue-1,2016-2017,AS Saint-Étienne,618,as-saint-etienne,42,24.5,21,2.02,85.03
+ligue-1,2016-2017,LOSC Lille,1082,losc-lille,46,25.1,24,1.82,83.9
+ligue-1,2016-2017,Stade Rennais FC,273,fc-stade-rennes,43,25.5,24,1.88,80.9
+ligue-1,2016-2017,FC Toulouse,415,fc-toulouse,38,24.3,23,2.03,77.3
+ligue-1,2016-2017,FC Lorient,1158,fc-lorient,41,25.5,19,1.49,61.1
+ligue-1,2016-2017,Montpellier HSC,969,montpellier-hsc,35,26.0,21,1.74,60.95
+ligue-1,2016-2017,FC Nantes,995,fc-nantes,30,24.9,19,1.7,50.9
+ligue-1,2016-2017,Angers SCO,1420,sco-angers,36,26.7,21,1.28,46.08
+ligue-1,2016-2017,EA Guingamp,855,ea-guingamp,35,26.7,15,1.21,42.5
+ligue-1,2016-2017,FC Metz,347,fc-metz,39,25.0,24,0.963,37.55
+ligue-1,2016-2017,SM Caen,1162,sm-caen,36,26.6,19,1.02,36.65
+ligue-1,2016-2017,SC Bastia,595,sc-bastia,37,25.6,19,0.985,36.45
+ligue-1,2016-2017,AS Nancy-Lorraine,1159,as-nancy-lorraine,30,26.7,15,1.1,33.1
+ligue-1,2016-2017,Dijon FCO,2969,dijon-fco,33,26.8,12,0.9450000000000001,31.2
+ligue-1,2017-2018,Paris Saint-Germain,583,fc-paris-saint-germain,35,25.5,20,25.72,900.1
+ligue-1,2017-2018,AS Monaco,162,as-monaco,38,24.0,27,13.94,529.8
+ligue-1,2017-2018,Olympique Lyon,1041,olympique-lyon,34,23.6,21,10.7,363.8
+ligue-1,2017-2018,Olympique Marseille,244,olympique-marseille,29,27.3,13,8.17,236.8
+ligue-1,2017-2018,OGC Nice,417,ogc-nizza,39,24.1,17,5.23,204.1
+ligue-1,2017-2018,FC Girondins Bordeaux,40,fc-girondins-bordeaux,37,24.6,22,4.2,155.45
+ligue-1,2017-2018,Stade Rennais FC,273,fc-stade-rennes,35,24.8,19,3.75,131.25
+ligue-1,2017-2018,FC Toulouse,415,fc-toulouse,28,25.0,17,3.94,110.45
+ligue-1,2017-2018,AS Saint-Étienne,618,as-saint-etienne,40,25.4,23,2.67,106.88
+ligue-1,2017-2018,FC Nantes,995,fc-nantes,36,25.2,22,2.94,105.7
+ligue-1,2017-2018,LOSC Lille,1082,losc-lille,32,22.5,21,3.02,96.75
+ligue-1,2017-2018,Montpellier HSC,969,montpellier-hsc,30,25.8,18,2.4,71.85
+ligue-1,2017-2018,Dijon FCO,2969,dijon-fco,35,26.1,16,2.01,70.3
+ligue-1,2017-2018,Amiens SC,1416,amiens-sc,34,27.8,19,2.05,69.85
+ligue-1,2017-2018,Angers SCO,1420,sco-angers,33,26.6,19,2.11,69.55
+ligue-1,2017-2018,SM Caen,1162,sm-caen,33,26.3,17,1.82,60.1
+ligue-1,2017-2018,EA Guingamp,855,ea-guingamp,30,27.2,14,1.73,51.9
+ligue-1,2017-2018,FC Metz,347,fc-metz,44,25.2,26,1.16,51.2
+ligue-1,2017-2018,RC Strasbourg Alsace,667,rc-strassburg-alsace,31,26.8,15,1.47,45.6
+ligue-1,2017-2018,ESTAC Troyes,1095,es-troyes-ac,30,26.5,17,1.5,45.05
+ligue-1,2018-2019,Paris Saint-Germain,583,fc-paris-saint-germain,39,25.4,24,25.9,1010.0
+ligue-1,2018-2019,Olympique Lyon,1041,olympique-lyon,34,24.2,19,13.76,467.95
+ligue-1,2018-2019,AS Monaco,162,as-monaco,57,23.9,40,6.77,385.83
+ligue-1,2018-2019,LOSC Lille,1082,losc-lille,32,24.1,25,8.36,267.55
+ligue-1,2018-2019,Olympique Marseille,244,olympique-marseille,33,26.7,16,7.83,258.35
+ligue-1,2018-2019,OGC Nice,417,ogc-nizza,38,23.2,19,4.82,183.2
+ligue-1,2018-2019,FC Girondins Bordeaux,40,fc-girondins-bordeaux,43,24.4,24,4.16,179.0
+ligue-1,2018-2019,Stade Rennais FC,273,fc-stade-rennes,41,24.2,19,4.11,168.45
+ligue-1,2018-2019,AS Saint-Étienne,618,as-saint-etienne,42,24.8,18,3.13,131.25
+ligue-1,2018-2019,FC Nantes,995,fc-nantes,40,25.3,28,2.99,119.5
+ligue-1,2018-2019,FC Toulouse,415,fc-toulouse,40,24.6,23,2.83,113.25
+ligue-1,2018-2019,Montpellier HSC,969,montpellier-hsc,32,26.1,19,3.43,109.85
+ligue-1,2018-2019,RC Strasbourg Alsace,667,rc-strassburg-alsace,33,25.7,15,2.97,98.0
+ligue-1,2018-2019,Nîmes Olympique,1160,nimes-olympique,31,25.5,13,2.84,88.15
+ligue-1,2018-2019,Stade Reims,1421,stade-reims,37,25.0,22,2.35,86.95
+ligue-1,2018-2019,Angers SCO,1420,sco-angers,38,26.9,20,2.1,79.7
+ligue-1,2018-2019,EA Guingamp,855,ea-guingamp,37,25.7,19,1.91,70.65
+ligue-1,2018-2019,Amiens SC,1416,amiens-sc,36,25.9,20,1.96,70.5
+ligue-1,2018-2019,SM Caen,1162,sm-caen,39,25.3,19,1.73,67.55
+ligue-1,2018-2019,Dijon FCO,2969,dijon-fco,32,26.3,18,2.06,65.8
+ligue-1,2019-2020,Paris Saint-Germain,583,fc-paris-saint-germain,35,25.8,27,24.98,874.15
+ligue-1,2019-2020,Olympique Lyon,1041,olympique-lyon,33,24.5,22,11.65,384.55
+ligue-1,2019-2020,AS Monaco,162,as-monaco,39,25.7,30,8.49,331.03
+ligue-1,2019-2020,LOSC Lille,1082,losc-lille,31,24.2,22,7.99,247.78
+ligue-1,2019-2020,Olympique Marseille,244,olympique-marseille,34,24.8,13,6.36,216.15
+ligue-1,2019-2020,OGC Nice,417,ogc-nizza,37,23.5,20,4.69,173.45
+ligue-1,2019-2020,Stade Rennais FC,273,fc-stade-rennes,33,25.5,17,5.21,171.88
+ligue-1,2019-2020,FC Girondins Bordeaux,40,fc-girondins-bordeaux,31,25.6,20,4.04,125.35
+ligue-1,2019-2020,FC Nantes,995,fc-nantes,35,25.5,22,3.03,106.15
+ligue-1,2019-2020,AS Saint-Étienne,618,as-saint-etienne,41,25.2,20,2.56,104.83
+ligue-1,2019-2020,RC Strasbourg Alsace,667,rc-strassburg-alsace,31,26.1,16,2.94,91.13
+ligue-1,2019-2020,Angers SCO,1420,sco-angers,31,26.3,16,2.89,89.48
+ligue-1,2019-2020,Montpellier HSC,969,montpellier-hsc,30,26.6,16,2.72,81.68
+ligue-1,2019-2020,Stade Reims,1421,stade-reims,31,24.2,23,2.63,81.68
+ligue-1,2019-2020,FC Toulouse,415,fc-toulouse,35,24.0,18,2.05,71.88
+ligue-1,2019-2020,Amiens SC,1416,amiens-sc,37,25.8,21,1.67,61.93
+ligue-1,2019-2020,FC Metz,347,fc-metz,32,24.8,21,1.69,54.1
+ligue-1,2019-2020,Dijon FCO,2969,dijon-fco,31,25.9,20,1.62,50.23
+ligue-1,2019-2020,Nîmes Olympique,1160,nimes-olympique,35,24.3,13,1.42,49.65
+ligue-1,2019-2020,Stade Brestois 29,3911,stade-brest-29,28,26.5,10,1.71,47.78
+ligue-1,2020-2021,Paris Saint-Germain,583,fc-paris-saint-germain,41,24.7,30,19.63,805.0
+ligue-1,2020-2021,Olympique Lyon,1041,olympique-lyon,40,24.7,29,10.78,431.35
+ligue-1,2020-2021,AS Monaco,162,as-monaco,33,24.4,19,11.22,370.35
+ligue-1,2020-2021,LOSC Lille,1082,losc-lille,32,24.1,23,10.1,323.2
+ligue-1,2020-2021,Stade Rennais FC,273,fc-stade-rennes,37,24.6,14,8.04,297.5
+ligue-1,2020-2021,Olympique Marseille,244,olympique-marseille,37,25.5,19,6.7,247.95
+ligue-1,2020-2021,OGC Nice,417,ogc-nizza,41,22.8,21,5.76,236.1
+ligue-1,2020-2021,AS Saint-Étienne,618,as-saint-etienne,43,24.1,23,3.59,154.5
+ligue-1,2020-2021,Montpellier HSC,969,montpellier-hsc,34,25.6,16,3.35,113.85
+ligue-1,2020-2021,Angers SCO,1420,sco-angers,38,26.2,21,2.94,111.65
+ligue-1,2020-2021,RC Strasbourg Alsace,667,rc-strassburg-alsace,34,25.7,21,3.23,109.65
+ligue-1,2020-2021,FC Girondins Bordeaux,40,fc-girondins-bordeaux,36,26.0,20,2.94,105.7
+ligue-1,2020-2021,Stade Reims,1421,stade-reims,34,23.6,28,3.09,105.18
+ligue-1,2020-2021,RC Lens,826,rc-lens,36,25.3,19,2.9,104.3
+ligue-1,2020-2021,FC Metz,347,fc-metz,35,25.1,25,2.96,103.5
+ligue-1,2020-2021,Stade Brestois 29,3911,stade-brest-29,32,25.7,11,3.23,103.23
+ligue-1,2020-2021,FC Nantes,995,fc-nantes,32,25.9,18,2.96,94.75
+ligue-1,2020-2021,FC Lorient,1158,fc-lorient,34,26.8,15,2.14,72.88
+ligue-1,2020-2021,Dijon FCO,2969,dijon-fco,37,24.9,26,1.77,65.63
+ligue-1,2020-2021,Nîmes Olympique,1160,nimes-olympique,36,25.3,20,1.68,60.4
+ligue-1,2021-2022,Paris Saint-Germain,583,fc-paris-saint-germain,41,26.2,29,21.35,875.15
+ligue-1,2021-2022,Olympique Lyon,1041,olympique-lyon,40,24.9,21,9.94,397.7
+ligue-1,2021-2022,AS Monaco,162,as-monaco,41,23.7,25,9.66,396.0
+ligue-1,2021-2022,LOSC Lille,1082,losc-lille,41,24.6,29,7.48,306.88
+ligue-1,2021-2022,Stade Rennais FC,273,fc-stade-rennes,36,23.3,12,8.48,305.35
+ligue-1,2021-2022,Olympique Marseille,244,olympique-marseille,38,24.0,22,7.49,284.7
+ligue-1,2021-2022,OGC Nice,417,ogc-nizza,34,24.3,24,7.83,266.05
+ligue-1,2021-2022,RC Lens,826,rc-lens,35,25.3,20,4.4,154.05
+ligue-1,2021-2022,Stade Reims,1421,stade-reims,40,24.0,30,3.74,149.4
+ligue-1,2021-2022,Montpellier HSC,969,montpellier-hsc,36,25.3,19,4.02,144.6
+ligue-1,2021-2022,RC Strasbourg Alsace,667,rc-strassburg-alsace,33,25.4,21,3.64,120.05
+ligue-1,2021-2022,FC Girondins Bordeaux,40,fc-girondins-bordeaux,54,24.5,33,2.16,116.85
+ligue-1,2021-2022,FC Nantes,995,fc-nantes,31,26.1,18,3.63,112.65
+ligue-1,2021-2022,AS Saint-Étienne,618,as-saint-etienne,44,24.4,26,2.4,105.65
+ligue-1,2021-2022,Stade Brestois 29,3911,stade-brest-29,30,26.0,11,3.44,103.15
+ligue-1,2021-2022,FC Metz,347,fc-metz,41,25.6,29,2.22,91.05
+ligue-1,2021-2022,Angers SCO,1420,sco-angers,38,25.8,21,2.36,89.5
+ligue-1,2021-2022,ESTAC Troyes,1095,es-troyes-ac,50,25.1,28,1.46,73.2
+ligue-1,2021-2022,FC Lorient,1158,fc-lorient,35,25.8,15,1.75,61.3
+ligue-1,2021-2022,Clermont Foot 63,3524,clermont-foot-63,39,25.5,24,1.41,55.1
+ligue-1,2022-2023,Paris Saint-Germain,583,fc-paris-saint-germain,37,25.9,24,24.08,891.1
+ligue-1,2022-2023,Stade Rennais FC,273,fc-stade-rennes,38,24.3,19,10.2,387.75
+ligue-1,2022-2023,AS Monaco,162,as-monaco,32,24.3,18,11.51,368.3
+ligue-1,2022-2023,Olympique Lyon,1041,olympique-lyon,34,25.5,17,10.32,350.95
+ligue-1,2022-2023,Olympique Marseille,244,olympique-marseille,37,25.6,29,8.96,331.55
+ligue-1,2022-2023,OGC Nice,417,ogc-nizza,41,24.3,28,7.58,310.8
+ligue-1,2022-2023,LOSC Lille,1082,losc-lille,33,25.3,21,7.51,247.95
+ligue-1,2022-2023,RC Lens,826,rc-lens,39,25.4,23,6.11,238.15
+ligue-1,2022-2023,FC Lorient,1158,fc-lorient,42,24.6,18,4.18,175.45
+ligue-1,2022-2023,Stade Reims,1421,stade-reims,40,23.8,31,3.98,159.05
+ligue-1,2022-2023,Montpellier HSC,969,montpellier-hsc,39,25.1,20,3.66,142.9
+ligue-1,2022-2023,RC Strasbourg Alsace,667,rc-strassburg-alsace,36,26.0,19,3.43,123.55
+ligue-1,2022-2023,FC Nantes,995,fc-nantes,37,26.0,21,3.22,119.28
+ligue-1,2022-2023,FC Toulouse,415,fc-toulouse,37,24.0,30,2.83,104.8
+ligue-1,2022-2023,Stade Brestois 29,3911,stade-brest-29,32,26.3,16,2.4,76.65
+ligue-1,2022-2023,ESTAC Troyes,1095,es-troyes-ac,41,24.9,21,1.86,76.3
+ligue-1,2022-2023,Angers SCO,1420,sco-angers,44,25.1,23,1.63,71.8
+ligue-1,2022-2023,AJ Auxerre,290,aj-auxerre,42,26.5,20,1.3,54.8
+ligue-1,2022-2023,Clermont Foot 63,3524,clermont-foot-63,33,26.3,22,1.45,48.0
+ligue-1,2022-2023,AC Ajaccio,1147,ac-ajaccio,41,27.1,24,0.659,27.0
+ligue-1,2023-2024,Paris Saint-Germain,583,fc-paris-saint-germain,36,24.9,21,28.36,1020.0
+ligue-1,2023-2024,AS Monaco,162,as-monaco,40,24.0,22,9.96,398.55
+ligue-1,2023-2024,Stade Rennais FC,273,fc-stade-rennes,36,24.8,18,10.43,375.35
+ligue-1,2023-2024,LOSC Lille,1082,losc-lille,41,23.8,26,8.02,328.9
+ligue-1,2023-2024,Olympique Marseille,244,olympique-marseille,49,24.4,31,6.36,311.4
+ligue-1,2023-2024,Olympique Lyon,1041,olympique-lyon,39,25.5,25,7.84,305.95
+ligue-1,2023-2024,OGC Nice,417,ogc-nizza,38,24.5,23,7.07,268.78
+ligue-1,2023-2024,RC Lens,826,rc-lens,38,25.9,19,5.41,205.6
+ligue-1,2023-2024,RC Strasbourg Alsace,667,rc-strassburg-alsace,39,24.0,25,4.04,157.7
+ligue-1,2023-2024,Montpellier HSC,969,montpellier-hsc,37,24.8,20,3.93,145.58
+ligue-1,2023-2024,FC Toulouse,415,fc-toulouse,39,23.3,27,3.72,145.2
+ligue-1,2023-2024,Stade Reims,1421,stade-reims,39,23.9,28,3.45,134.55
+ligue-1,2023-2024,FC Lorient,1158,fc-lorient,45,24.7,27,2.93,131.85
+ligue-1,2023-2024,FC Nantes,995,fc-nantes,43,25.2,22,2.93,125.9
+ligue-1,2023-2024,Stade Brestois 29,3911,stade-brest-29,31,25.9,10,3.71,115.15
+ligue-1,2023-2024,Le Havre AC,738,ac-le-havre,35,25.1,22,2.07,72.5
+ligue-1,2023-2024,FC Metz,347,fc-metz,37,25.5,27,1.77,65.4
+ligue-1,2023-2024,Clermont Foot 63,3524,clermont-foot-63,36,25.2,21,1.7,61.35

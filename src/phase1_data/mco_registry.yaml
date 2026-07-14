@@ -1,0 +1,152 @@
+# Multi-club ownership (MCO) registry — core input for H2.
+#
+# Definition (methodology section):
+#   A club-season is MCO if, during that season, a shareholder/group holding a
+#   controlling or significant (>=25%) stake in the club simultaneously held a
+#   controlling/significant stake in at least one other men's professional
+#   football club. A stake completed mid-season counts from that season.
+#
+# `scope`: integrated (shared scouting/pathways — the H2 synergy story) vs
+# portfolio (financial holding, weak/no sporting integration) — enables
+# sensitivity tests.
+#
+# All entries verified against the cited sources on 2026-07-14.
+
+groups:
+  - group: BlueCo
+    scope: integrated
+    members:
+      - {club: Chelsea, league: premier-league, from_season: "2022-2023", to_season: null,
+         note: "BlueCo (Boehly/Clearlake) completed Chelsea takeover May 2022 (GBP 4.25bn incl. commitments)",
+         source: "https://en.wikipedia.org/wiki/BlueCo", verified: true}
+      - {club: Strasbourg, league: ligue-1, from_season: "2023-2024", to_season: null,
+         note: "BlueCo acquired 99.97% of RC Strasbourg June 2023 for EUR 75m",
+         source: "https://footballbenchmark.com/w/blueco-s-strasbourg-project-investing-to-build-a-competitive-force-in-a-fragile-ligue-1", verified: true}
+
+  - group: City Football Group
+    scope: integrated
+    members:
+      - {club: Manchester City, league: premier-league, from_season: "2015-2016", to_season: null,
+         note: "CFG multi-club since NYCFC (2013)/Melbourne (2014); 10 clubs by 2020 — pre-dates panel",
+         source: "https://www.cityfootballgroup.com/clubs/estac-troyes", verified: true}
+      - {club: Troyes, league: ligue-1, from_season: "2020-2021", to_season: null,
+         note: "CFG majority stake in ESTAC Troyes completed 3 September 2020 (~EUR 10m)",
+         source: "https://www.skysports.com/football/news/11800/12062548/troyes-ac-manchester-city-owners-city-football-group-acquire-ligue-2-club", verified: true}
+
+  - group: Eagle Football Holdings (Textor)
+    scope: integrated
+    members:
+      - {club: Crystal Palace, league: premier-league, from_season: "2021-2022", to_season: null,
+         note: "Textor bought ~40% of Palace August 2021 (alongside Botafogo, RWDM); sold 2025 (outside panel)",
+         source: "https://en.wikipedia.org/wiki/John_Textor", verified: true}
+      - {club: Lyon, league: ligue-1, from_season: "2022-2023", to_season: null,
+         note: "Eagle Football acquired 77.49% of OL Groupe, completed 19 December 2022 (EUR 529m)",
+         source: "https://www.insideworldfootball.com/2022/12/20/textor-eagle-football-close-deal-lyon/", verified: true}
+
+  - group: RedBird Capital
+    scope: integrated
+    members:
+      - {club: Toulouse, league: ligue-1, from_season: "2022-2023", to_season: null,
+         note: "RedBird bought 85% of Toulouse 20 July 2020 (then Ligue 2); enters panel on L1 return 2022-23; AC Milan added Aug 2022",
+         source: "https://www.globenewswire.com/news-release/2020/07/20/2064187/0/en/RedBird-Capital-Partners-Acquires-Majority-Stake-in-Toulouse-Football-Club.html", verified: true}
+
+  - group: INEOS
+    scope: integrated
+    members:
+      - {club: Nice, league: ligue-1, from_season: "2019-2020", to_season: null,
+         note: "INEOS completed OGC Nice takeover 27 August 2019 (~EUR 100m; Lausanne-Sport owned since 2017)",
+         source: "https://www.sportbusiness.com/news/ineos-completes-e100m-takeover-for-ligue-1-club-ogc-nice/", verified: true}
+      - {club: Manchester United, league: premier-league, from_season: "2023-2024", to_season: null,
+         note: "Ratcliffe/INEOS 27.7% minority with football-operations control, completed 17-20 February 2024",
+         source: "https://www.skysports.com/football/news/11667/13071401/sir-jim-ratcliffe-completes-deal-to-buy-manchester-united-minority-stake", verified: true}
+
+  - group: Pozzo family
+    scope: integrated
+    members:
+      - {club: Watford, league: premier-league, from_season: "2015-2016", to_season: null,
+         note: "Pozzo family: Udinese since 1986, Watford since June 2012 (Granada 2009-2016) — whole panel window",
+         source: "https://en.wikipedia.org/wiki/Gino_Pozzo", verified: true}
+
+  - group: King Power
+    scope: integrated
+    members:
+      - {club: Leicester City, league: premier-league, from_season: "2017-2018", to_season: null,
+         note: "King Power acquired 92% of OH Leuven, completed May/June 2017",
+         source: "https://www.skysports.com/football/news/11712/10913442/leicester-city-owners-king-power-group-buy-belgian-club-oud-heverlee-leuven", verified: true}
+
+  - group: Tony Bloom
+    scope: integrated
+    members:
+      - {club: Brighton, league: premier-league, from_season: "2018-2019", to_season: null,
+         note: "Bloom took 75% of Union Saint-Gilloise in 2018; reduced to exactly 25% in 2023 for UEFA rules (still on-threshold; sensitivity-test 2023-24)",
+         source: "https://en.wikipedia.org/wiki/Tony_Bloom", verified: true}
+
+  - group: Marinakis (Olympiacos)
+    scope: integrated
+    members:
+      - {club: Nottingham Forest, league: premier-league, from_season: "2022-2023", to_season: null,
+         note: "Marinakis: Olympiacos since 2010, Forest since 2017, Rio Ave added later; Forest in panel only from PL promotion 2022-23",
+         source: "https://en.wikipedia.org/wiki/Evangelos_Marinakis", verified: true}
+
+  - group: PIF
+    scope: portfolio
+    members:
+      - {club: Newcastle United, league: premier-league, from_season: "2023-2024", to_season: null,
+         note: "PIF 80% of Newcastle Oct 2021; counted MCO from June 2023 when PIF took 75% of Al Nassr/Al Hilal/Al Ahli/Al Ittihad. SPL sources claim independent boards — hence scope: portfolio; sensitivity-test the 2021 dating",
+         source: "https://www.sportspro.com/news/saudi-pro-league-pif-al-nassr-hilal-ittihad-ahli-takeover-privatisation-aramco-neom/", verified: true}
+
+  - group: Rybolovlev
+    scope: integrated
+    members:
+      - {club: Monaco, league: ligue-1, from_season: "2016-2017", to_season: null,
+         note: "Monaco completed Cercle Brugge takeover February 2017 (mid 2016-17, youth-development satellite)",
+         source: "https://www.insideworldfootball.com/2017/05/09/monaco-buy-belgiums-club-brugge-develop-talent-target-top-division/", verified: true}
+
+  - group: Black Knight / Foley
+    scope: integrated
+    members:
+      - {club: Bournemouth, league: premier-league, from_season: "2022-2023", to_season: null,
+         note: "Foley completed Bournemouth takeover 14 December 2022; ~33% of Lorient added 13 January 2023 (also Hibernian, Auckland)",
+         source: "https://www.skysports.com/football/news/11743/12767270/bournemouth-takeover-american-businessman-bill-foleys-consortium-completes-purchase-worth-over-lb100m", verified: true}
+
+  - group: United World (Prince Abdullah)
+    scope: integrated
+    members:
+      - {club: Sheffield United, league: premier-league, from_season: "2019-2020", to_season: null,
+         note: "Prince Abdullah: 50% of Beerschot from mid-2018 (75% Jan 2020), Sheffield United sole owner from Sep 2019; SU panel seasons 2019-20, 2020-21, 2023-24 all covered",
+         source: "https://en.wikipedia.org/wiki/Abdullah_bin_Mosaad_Al_Saud", verified: true}
+
+  - group: Gerard Lopez
+    scope: portfolio
+    members:
+      - {club: Lille, league: ligue-1, from_season: "2020-2021", to_season: "2020-2021",
+         note: "Lopez owned Lille Jan 2017 - Dec 2020 but acquired Royal Excel Mouscron only July 2020; overlap = first half of 2020-21 only (Elliott removed him Dec 2020). Earlier alleged Lille-Mouscron links were informal/agent-mediated — not ownership; single-season flag with caveat",
+         source: "https://ronitkothari4.medium.com/the-gerard-lopez-football-empire-a-tale-of-ambition-success-and-spectacular-failures-across-f6e6641ffe39", verified: true}
+
+  - group: V Sports
+    scope: integrated
+    members:
+      - {club: Aston Villa, league: premier-league, from_season: "2023-2024", to_season: null,
+         note: "V Sports bought 46% of Vitoria SC February 2023; UEFA-mandated reduction to 29% June 2023 (still >=25%)",
+         source: "https://www.sportbusiness.com/news/aston-villa-owners-buy-46-per-cent-stake-in-vitoria-de-guimaraes-for-e5-5m/", verified: true}
+
+  - group: Sport Republic
+    scope: integrated
+    members:
+      - {club: Southampton, league: premier-league, from_season: "2022-2023", to_season: null,
+         note: "Sport Republic (80% of Southampton Jan 2022) acquired 70% of Goztepe 19 August 2022",
+         source: "https://en.wikipedia.org/wiki/Sport_Republic", verified: true}
+
+# Considered and EXCLUDED (documented for reviewers):
+# - QSI / Paris Saint-Germain: QSI bought 21.67% of SC Braga on 10 Oct 2022
+#   (https://news.bloomberglaw.com/mergers-and-acquisitions/psgs-qatari-owner-buys-22-stake-in-portuguese-soccer-club)
+#   — BELOW the >=25% significance threshold, so PSG is NOT flagged. Kept as a
+#   sensitivity case: rerun H2 with PSG flagged from 2022-23.
+# - Blitzer / Crystal Palace: Blitzer's Palace stake (~18%) is below threshold,
+#   so his separate multi-club network does not flag Palace. Palace is already
+#   flagged via Textor (~40%) from 2021-22.
+# - Kroenke / Arsenal (Colorado Rapids): MLS single-entity franchise, no
+#   football synergy channel; excluded under the men's-pro-football reading —
+#   noted as a definitional sensitivity.
+# - FSG/Liverpool, Glazers/Man Utd (pre-INEOS), Fosun/Wolves, 49ers/Leeds,
+#   McCourt/Marseille, Pinault/Rennes: single-football-club owners.

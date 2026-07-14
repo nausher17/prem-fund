@@ -1,0 +1,66 @@
+league,canonical,team_fd,team_tm,tm_club_id,coi_flag
+premier-league,Arsenal,Arsenal,Arsenal FC,11,0
+premier-league,Aston Villa,Aston Villa,Aston Villa,405,0
+premier-league,Bournemouth,Bournemouth,AFC Bournemouth,989,0
+premier-league,Brentford,Brentford,Brentford FC,1148,0
+premier-league,Brighton,Brighton,Brighton & Hove Albion,1237,0
+premier-league,Burnley,Burnley,Burnley FC,1132,0
+premier-league,Cardiff City,Cardiff,Cardiff City,603,0
+premier-league,Chelsea,Chelsea,Chelsea FC,631,1
+premier-league,Crystal Palace,Crystal Palace,Crystal Palace,873,0
+premier-league,Everton,Everton,Everton FC,29,0
+premier-league,Fulham,Fulham,Fulham FC,931,0
+premier-league,Huddersfield,Huddersfield,Huddersfield Town,1110,0
+premier-league,Hull City,Hull,Hull City,3008,0
+premier-league,Leeds United,Leeds,Leeds United,399,0
+premier-league,Leicester City,Leicester,Leicester City,1003,0
+premier-league,Liverpool,Liverpool,Liverpool FC,31,0
+premier-league,Luton Town,Luton,Luton Town,1031,0
+premier-league,Manchester City,Man City,Manchester City,281,0
+premier-league,Manchester United,Man United,Manchester United,985,0
+premier-league,Middlesbrough,Middlesbrough,Middlesbrough FC,641,0
+premier-league,Newcastle United,Newcastle,Newcastle United,762,0
+premier-league,Norwich City,Norwich,Norwich City,1123,0
+premier-league,Nottingham Forest,Nott'm Forest,Nottingham Forest,703,0
+premier-league,Sheffield United,Sheffield United,Sheffield United,350,0
+premier-league,Southampton,Southampton,Southampton FC,180,0
+premier-league,Stoke City,Stoke,Stoke City,512,0
+premier-league,Sunderland,Sunderland,Sunderland AFC,289,0
+premier-league,Swansea City,Swansea,Swansea City,2288,0
+premier-league,Tottenham Hotspur,Tottenham,Tottenham Hotspur,148,0
+premier-league,Watford,Watford,Watford FC,1010,0
+premier-league,West Brom,West Brom,West Bromwich Albion,984,0
+premier-league,West Ham,West Ham,West Ham United,379,0
+premier-league,Wolves,Wolves,Wolverhampton Wanderers,543,0
+ligue-1,AC Ajaccio,Ajaccio,AC Ajaccio,1147,0
+ligue-1,Gazelec Ajaccio,Ajaccio GFCO,GFC Ajaccio,3558,0
+ligue-1,Amiens,Amiens,Amiens SC,1416,0
+ligue-1,Angers,Angers,Angers SCO,1420,0
+ligue-1,Auxerre,Auxerre,AJ Auxerre,290,0
+ligue-1,Bastia,Bastia,SC Bastia,595,0
+ligue-1,Bordeaux,Bordeaux,FC Girondins Bordeaux,40,0
+ligue-1,Brest,Brest,Stade Brestois 29,3911,0
+ligue-1,Caen,Caen,SM Caen,1162,0
+ligue-1,Clermont,Clermont,Clermont Foot 63,3524,0
+ligue-1,Dijon,Dijon,Dijon FCO,2969,0
+ligue-1,Guingamp,Guingamp,EA Guingamp,855,0
+ligue-1,Le Havre,Le Havre,Le Havre AC,738,0
+ligue-1,Lens,Lens,RC Lens,826,0
+ligue-1,Lille,Lille,LOSC Lille,1082,0
+ligue-1,Lorient,Lorient,FC Lorient,1158,0
+ligue-1,Lyon,Lyon,Olympique Lyon,1041,0
+ligue-1,Marseille,Marseille,Olympique Marseille,244,0
+ligue-1,Metz,Metz,FC Metz,347,0
+ligue-1,Monaco,Monaco,AS Monaco,162,0
+ligue-1,Montpellier,Montpellier,Montpellier HSC,969,0
+ligue-1,Nancy,Nancy,AS Nancy-Lorraine,1159,0
+ligue-1,Nantes,Nantes,FC Nantes,995,0
+ligue-1,Nice,Nice,OGC Nice,417,0
+ligue-1,Nimes,Nimes,Nîmes Olympique,1160,0
+ligue-1,Paris Saint-Germain,Paris SG,Paris Saint-Germain,583,0
+ligue-1,Reims,Reims,Stade Reims,1421,0
+ligue-1,Rennes,Rennes,Stade Rennais FC,273,0
+ligue-1,Saint-Etienne,St Etienne,AS Saint-Étienne,618,0
+ligue-1,Strasbourg,Strasbourg,RC Strasbourg Alsace,667,1
+ligue-1,Toulouse,Toulouse,FC Toulouse,415,0
+ligue-1,Troyes,Troyes,ESTAC Troyes,1095,0

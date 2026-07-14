@@ -1,0 +1,22 @@
+# environments
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# secrets
+.env
+
+# large cached raw data (kept locally, regenerable via scrapers/APIs)
+data/raw/
+
+# build artefacts
+cpp/build/
+*.o
+*.so
+
+# archives are build products
+outputs/*.tar.gz
+
+# OS noise
+.DS_Store
