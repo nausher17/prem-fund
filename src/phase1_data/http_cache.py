@@ -49,6 +49,8 @@ class ThrottledCachedSession:
         min_delay: float = 3.5,
         user_agent: str = DEFAULT_USER_AGENT,
         max_retries: int = 3,
+        auth: tuple[str, str] | None = None,
+        headers: dict[str, str] | None = None,
     ):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
@@ -56,6 +58,10 @@ class ThrottledCachedSession:
         self.max_retries = max_retries
         self.session = requests.Session()
         self.session.headers["User-Agent"] = user_agent
+        if auth is not None:
+            self.session.auth = auth  # e.g. Companies House basic auth (key, "")
+        if headers:
+            self.session.headers.update(headers)
         self._last_request_at: dict[str, float] = {}  # per-host
         self._robots: dict[str, urllib.robotparser.RobotFileParser] = {}
         self._index_path = self.cache_dir / "index.jsonl"
