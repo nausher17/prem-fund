@@ -1,0 +1,28 @@
+# Publicly reported figures used to gate OCR extraction quality and entity
+# selection. If extracted revenue diverges from these beyond tolerance_pct,
+# the club-year is flagged (wrong entity or OCR failure) — never shipped.
+# All figures GBP. Sources checked 2026-07-16.
+
+tolerance_pct: 2.0
+
+benchmarks:
+  - club: Everton
+    fy_end: "2024-06-30"
+    revenue: 186_900_000
+    result_for_year: -53_200_000
+    source: "https://theesk.org/2025/03/31/survival-by-the-skin-of-our-teeth-summary-and-analysis-of-evertons-2024-annual-accounts/ (turnover GBP 186.9m, loss GBP 53.2m)"
+
+  - club: Liverpool
+    fy_end: "2024-05-31"
+    revenue: 614_000_000
+    source: "https://www.liverpoolfc.com/news/lfc-announces-financial-results-2023-24-season (revenue GBP 614m; pre-tax loss GBP 57.1m not benchmarked — post-tax concept differs)"
+
+  - club: Brighton
+    fy_end: "2023-06-30"
+    revenue: 204_500_000
+    source: "https://www.brightonandhovealbion.com/news/3949063/albions-annual-accounts (turnover GBP 204.5m, PAT GBP 122.8m). CAVEAT: published figures are at Brighton & Hove Albion HOLDINGS level; if the club-level entity (00081077) diverges, switch registry to Holdings."
+
+  - club: Chelsea
+    fy_end: "2023-06-30"
+    revenue: 512_500_000
+    source: "https://www.chelseafc.com/en/news/article/chelsea-fc-2022-23-financial-results (revenue GBP 512.5m). CAVEAT: consolidated accounts are filed by CHELSEA FC HOLDINGS LIMITED (02536231); registry entity 01965149 may be a lower-level company — pending pilot comparison."

@@ -58,7 +58,40 @@ CH_REGISTRY: dict[str, str] = {
     "Liverpool": "00035668",          # THE LIVERPOOL FC AND ATHLETIC GROUNDS LTD, inc. 1892
     "Everton": "00036624",            # EVERTON FOOTBALL CLUB COMPANY, LIMITED, inc. 1892
     "Brighton": "00081077",           # BRIGHTON AND HOVE ALBION FC LIMITED, inc. 1904
-    "Chelsea": "01965149",            # CHELSEA FOOTBALL CLUB LIMITED, inc. 1985
+    "Chelsea": "02536231",            # CHELSEA FC HOLDINGS LIMITED — consolidated football
+                                      # accounts (club-level 01965149 showed GBP 474.8m vs
+                                      # published GBP 512.5m FY23, i.e. excludes women's/tours)
+    # Extended set. Entity choice = the operating company that carries the
+    # club's football turnover; every pick is gated downstream by the
+    # public-figure revenue benchmarks (wrong entity => benchmark failure).
+    "Arsenal": "00109244",            # THE ARSENAL FOOTBALL CLUB LIMITED, inc. 1910
+    "Aston Villa": "03375789",        # ASTON VILLA FOOTBALL CLUB LIMITED
+    "Bournemouth": "02393821",        # BOURNEMOUTH FOOTBALL CLUB LIMITED
+    "Brentford": "03642327",          # BRENTFORD FC LIMITED
+    "Burnley": "00054222",            # BURNLEY FOOTBALL & ATHLETIC COMPANY LTD, inc. 1897
+    "Cardiff City": "00109065",       # CARDIFF CITY FOOTBALL CLUB LIMITED, inc. 1910
+    "Crystal Palace": "07270793",     # CPFC LIMITED (operating co post-2010)
+    "Fulham": "02114486",             # FULHAM FOOTBALL CLUB LIMITED
+    "Huddersfield": "01771361",       # HUDDERSFIELD TOWN AFC LIMITED
+    "Hull City": "04032392",          # HULL CITY TIGERS LIMITED (operating co)
+    "Leeds United": "06233875",       # LEEDS UNITED FOOTBALL CLUB LIMITED
+    "Leicester City": "04593477",     # LEICESTER CITY FOOTBALL CLUB LIMITED
+    "Luton Town": "06133975",         # LUTON TOWN FOOTBALL CLUB 2020 LTD
+    "Manchester City": "00040946",    # MANCHESTER CITY FOOTBALL CLUB LIMITED, inc. 1894
+    "Middlesbrough": "01947851",      # MIDDLESBROUGH F&A CO (1986) LIMITED
+    "Newcastle United": "05981582",   # NEWCASTLE UNITED FOOTBALL CLUB LIMITED
+    "Norwich City": "00154044",       # NORWICH CITY FOOTBALL CLUB PLC, inc. 1919
+    "Nottingham Forest": "01630402",  # NOTTINGHAM FOREST FOOTBALL CLUB LIMITED
+    "Sheffield United": "00061564",   # THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED, inc. 1899
+    "Southampton": "00053301",        # SOUTHAMPTON FOOTBALL CLUB LIMITED, inc. 1897
+    "Stoke City": "00099885",         # STOKE CITY FOOTBALL CLUB LIMITED, inc. 1908
+    "Sunderland": "00049116",         # SUNDERLAND AFC LIMITED, inc. 1896
+    "Swansea City": "04305508",       # SWANSEA CITY FOOTBALL 2002 LIMITED
+    "Tottenham Hotspur": "01706358",  # TOTTENHAM HOTSPUR LIMITED (group reporting entity)
+    "Watford": "00104194",            # WATFORD ASSOCIATION FOOTBALL CLUB LIMITED, inc. 1909
+    "West Brom": "03295063",          # WEST BROMWICH ALBION FOOTBALL CLUB LIMITED
+    "West Ham": "00066516",           # WEST HAM UNITED FOOTBALL CLUB LIMITED, inc. 1900
+    "Wolves": "01989823",             # WOLVERHAMPTON WANDERERS FC (1986) LIMITED
 }
 
 

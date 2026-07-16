@@ -136,14 +136,19 @@ def ocr_pdf(pdf_path: Path) -> list[list[str]]:
 
 # -- extraction -------------------------------------------------------------------
 
-NUM = re.compile(r"\(?\d{1,3}(?:,\d{3})+\)?|\(?\d+(?:\.\d+)?\)?")
+NUM = re.compile(r"\(?\d{1,3}(?:,\s?\d{3})+\)?|\(?\d+(?:\.\d+)?\)?")
 
+_PREFIX = r"^(group |total |consolidated )?"
 LABELS = {
-    "revenue": re.compile(r"^turnover|^revenue\b", re.I),
-    "staff_costs": re.compile(r"^(total )?staff costs|^wages and salaries", re.I),
-    "operating_result": re.compile(r"^operating (profit|loss|result)", re.I),
-    "result_for_year": re.compile(r"^(profit|loss).{0,30}for the (financial )?(year|period)", re.I),
+    "revenue": re.compile(_PREFIX + r"(turnover|revenue)\b", re.I),
+    "staff_costs": re.compile(_PREFIX + r"(staff costs|wages and salaries)", re.I),
+    "operating_result": re.compile(_PREFIX + r"operating (profit|loss|result)", re.I),
+    "result_for_year": re.compile(
+        _PREFIX + r"(profit|loss).{0,30}for the (financial )?(year|period)", re.I),
 }
+
+PNL_HEADINGS = ("profit and loss account", "income statement",
+                "statement of comprehensive income")
 
 
 def parse_number(tok: str) -> float | None:
@@ -157,42 +162,72 @@ def parse_number(tok: str) -> float | None:
 
 
 def row_numbers(row: str) -> list[float]:
+    """Numeric cells after the label, with the note-reference column dropped.
+
+    Statutory P&L rows read e.g. 'Turnover | 3 | 474,847 | 453,056' where 3 is
+    the note number. A leading small bare integer followed by a much larger
+    figure is a note ref, not a value. Values are then read right-to-left:
+    rightmost = prior year, second-from-right = current year — which is also
+    correct for segmented P&Ls (e.g. Chelsea's ops/player-trading/total
+    columns, where 'total' sits immediately left of the prior year).
+    """
     cells = [c.strip() for c in row.split("|")]
     out = []
     for c in cells[1:] if len(cells) > 1 else []:
         m = NUM.fullmatch(c.replace(" ", "")) or NUM.search(c)
         if m:
-            v = parse_number(m.group())
+            v = parse_number(m.group().replace(" ", ""))
             if v is not None:
-                out.append(v)
-    return out
+                out.append((v, m.group()))
+    if (len(out) >= 2 and out[0][0] > 0 and out[0][0] < 60
+            and "." not in out[0][1] and "," not in out[0][1]
+            and abs(out[1][0]) >= 50 * out[0][0]):
+        out = out[1:]  # drop note reference
+    return [v for v, _ in out]
 
 
-def find_pnl_page(pages: list[list[str]]) -> int | None:
-    """The consolidated P&L: a page with a Turnover row followed by numbers,
-    plus an operating-result row. Prefer later occurrences (the statements
-    section) over the strategic-report narrative."""
-    best = None
+def pick_current_prior(nums: list[float]) -> tuple[float | None, float | None]:
+    if not nums:
+        return None, None
+    if len(nums) == 1:
+        return nums[0], None
+    return nums[-2], nums[-1]
+
+
+def find_pnl_page(pages: list[list[str]]) -> tuple[int | None, str]:
+    """The consolidated P&L page and how it was found.
+
+    Primary: a statement heading (PNL_HEADINGS) + a numeric Turnover row + an
+    operating-result row. Fallback: any page with a numeric Turnover row AND a
+    result-for-year row (some scans garble the heading); flagged so validation
+    scrutinises these harder. Strategic-report KPI tables are avoided by
+    requiring the operating/result rows, and the first qualifying page is the
+    statements page in practice (group P&L precedes company-only)."""
+    fallback = None
     for idx, rows in enumerate(pages):
         text = " \n".join(rows).lower()
-        if "profit and loss account" not in text and "income statement" not in text:
-            continue
         has_turnover = any(LABELS["revenue"].match(r.split("|")[0].strip())
                            and len(row_numbers(r)) >= 1 for r in rows)
+        if not has_turnover:
+            continue
         has_operating = any(LABELS["operating_result"].match(r.split("|")[0].strip())
                             for r in rows)
-        if has_turnover and has_operating:
-            best = idx  # keep the last matching page (group, not company-only,
-            # usually comes first; ties resolved by validation)
-            if best is not None:
-                return best
-    return best
+        has_result = any(LABELS["result_for_year"].match(r.split("|")[0].strip())
+                         for r in rows)
+        if any(h in text for h in PNL_HEADINGS) and has_operating:
+            return idx, "heading"
+        if fallback is None and has_operating and has_result:
+            fallback = idx
+    return fallback, ("fallback" if fallback is not None else "none")
 
 
 def detect_units(rows: list[str]) -> float:
-    """Multiplier to GBP: 1e3 for £'000 (default for statutory accounts), 1e6 for £m."""
-    joined = " ".join(rows).lower()
-    if "£m" in joined or "£ m" in joined:
+    """Multiplier to GBP: 1e3 for £'000 (statutory default), 1e6 for £m.
+
+    OCR regularly reads '£' as '€' or 'E' (Everton's £m columns come out as
+    'Em', Brighton's £'000 as €'000), so match on normalised tokens."""
+    joined = " ".join(rows).lower().replace("€", "£")
+    if re.search(r"\b[£e]\s?m\b", joined):
         return 1e6
     return 1e3
 
@@ -201,9 +236,10 @@ def extract_pdf(pdf_path: Path) -> dict:
     club, made_up = pdf_path.stem.rsplit("_", 1)
     club = club.replace("_", " ")
     pages = ocr_pdf(pdf_path)
-    pnl_idx = find_pnl_page(pages)
+    pnl_idx, how = find_pnl_page(pages)
     result = {"club": club, "fy_end": made_up, "source": pdf_path.name,
-              "pnl_page": None if pnl_idx is None else pnl_idx + 1}
+              "pnl_page": None if pnl_idx is None else pnl_idx + 1,
+              "pnl_locator": how}
     if pnl_idx is None:
         result["status"] = "pnl_not_found"
         return result
@@ -215,10 +251,10 @@ def extract_pdf(pdf_path: Path) -> dict:
         for r in rows:
             label = r.split("|")[0].strip()
             if pattern.match(label):
-                nums = row_numbers(r)
-                if nums:
-                    cur = nums[0] * units
-                    prior = nums[1] * units if len(nums) > 1 else None
+                cur, prior = pick_current_prior(row_numbers(r))
+                if cur is not None:
+                    cur *= units
+                    prior = prior * units if prior is not None else None
                     break
         result[field] = cur
         result[f"{field}_prior"] = prior
@@ -228,11 +264,11 @@ def extract_pdf(pdf_path: Path) -> dict:
             for r in rows_n:
                 label = r.split("|")[0].strip()
                 if LABELS["staff_costs"].match(label):
-                    nums = row_numbers(r)
-                    if nums:
-                        result["staff_costs"] = nums[0] * units
-                        result["staff_costs_prior"] = (nums[1] * units
-                                                       if len(nums) > 1 else None)
+                    cur, prior = pick_current_prior(row_numbers(r))
+                    if cur is not None:
+                        result["staff_costs"] = cur * units
+                        result["staff_costs_prior"] = (prior * units
+                                                       if prior is not None else None)
                         break
             if result.get("staff_costs") is not None:
                 break
