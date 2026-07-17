@@ -40,8 +40,16 @@ every live fetch.
   API when `FRED_API_KEY` is set, else FRED's public `fredgraph.csv` endpoint.
 - **Companies House API** — UK club financial statements. Requires
   `COMPANIES_HOUSE_API_KEY` (free registration); the pipeline fails fast with
-  instructions if missing. French club financials (DNCG reports) are a documented
-  later step.
+  instructions if missing. Every filing in the 2015–24 window is a scanned-image
+  PDF (no iXBRL), so line items (turnover, staff costs, operating result, result
+  for the year) are extracted with a macOS Vision **OCR pipeline** (`ch_ocr.py`):
+  P&L page location with OCR-tolerant fuzzy matching, note-reference stripping,
+  segmented-column resolution anchored on each filing's audited prior-year
+  comparatives, unit/scale correction, plausibility and continuity gates, and a
+  small evidence-cited overrides file for irrecoverably mangled statements.
+  Extraction quality is gated on cited public figures (`ch_benchmarks.yaml`) —
+  all pass ≤2% — and PL revenue coverage is 180/180 club-seasons. French club
+  financials (DNCG reports) are a documented later step.
 
 **Source changes from the original design (2026-07-14):**
 
@@ -102,8 +110,10 @@ scratch (from cache where scrapes are involved). Phase archives are written to
 
 ## Status
 
-- [x] Phase 1 — Data architecture *(complete 2026-07-14; one open item: financial-statement
-      features pending `COMPANIES_HOUSE_API_KEY` — see `data/validation/phase1_validation_report.md`)*
+- [x] Phase 1 — Data architecture *(complete 2026-07-17 incl. Companies House financials:
+      PL revenue 180/180 club-seasons, wage-to-revenue 155/180; open items — French club
+      financials via DNCG, staff-costs measure caveat — recorded in
+      `data/validation/phase1_validation_report.md`)*
 - [ ] Phase 2 — Valuation engine
 - [ ] Phase 3 — Hypothesis testing
 - [ ] Phase 4 — Portfolio construction & risk

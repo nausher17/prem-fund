@@ -1,0 +1,5 @@
+club,fy_end,action,revenue,evidence
+Watford,2018-06-30,set_revenue,128222000,"Watford_2018-06-30.pdf p5 strategic report table 'Turnover | 128,222 | 123,907' (GBP'000); prior column matches fy2017 statement extraction (123.9m); statements pages too degraded for the locator"
+Watford,2022-06-30,set_revenue,128094000,"Watford_2022-06-30.pdf p6 strategic report table 'Turnover | 128,094 | 57,061' (GBP'000); prior column consistent with Championship COVID FY21; statements pages too degraded for the locator"
+Watford,2023-06-30,suppress,,"extracted 500.0m is a junk pick (Watford Championship-era revenue ~70m); no neighbouring filing available to reconcile; season not PL-relevant"
+Nottingham Forest,2022-06-30,suppress,,"extracted 3.0m is a scale-fitted note fragment; season not PL-relevant (Championship 2021-22)"

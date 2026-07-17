@@ -66,7 +66,7 @@ CH_REGISTRY: dict[str, str] = {
     # public-figure revenue benchmarks (wrong entity => benchmark failure).
     "Arsenal": "00109244",            # THE ARSENAL FOOTBALL CLUB LIMITED, inc. 1910
     "Aston Villa": "03375789",        # ASTON VILLA FOOTBALL CLUB LIMITED
-    "Bournemouth": "02393821",        # BOURNEMOUTH FOOTBALL CLUB LIMITED
+    "Bournemouth": "06632170",        # AFC BOURNEMOUTH LIMITED (trading co; 02393821 files filleted accounts)
     "Brentford": "03642327",          # BRENTFORD FC LIMITED
     "Burnley": "00054222",            # BURNLEY FOOTBALL & ATHLETIC COMPANY LTD, inc. 1897
     "Cardiff City": "00109065",       # CARDIFF CITY FOOTBALL CLUB LIMITED, inc. 1910
@@ -79,7 +79,7 @@ CH_REGISTRY: dict[str, str] = {
     "Luton Town": "06133975",         # LUTON TOWN FOOTBALL CLUB 2020 LTD
     "Manchester City": "00040946",    # MANCHESTER CITY FOOTBALL CLUB LIMITED, inc. 1894
     "Middlesbrough": "01947851",      # MIDDLESBROUGH F&A CO (1986) LIMITED
-    "Newcastle United": "05981582",   # NEWCASTLE UNITED FOOTBALL CLUB LIMITED
+    "Newcastle United": "02529667",   # NEWCASTLE UNITED LIMITED (group; club-level 05981582 files s479A exemption statements only)
     "Norwich City": "00154044",       # NORWICH CITY FOOTBALL CLUB PLC, inc. 1919
     "Nottingham Forest": "01630402",  # NOTTINGHAM FOREST FOOTBALL CLUB LIMITED
     "Sheffield United": "00061564",   # THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED, inc. 1899
@@ -89,7 +89,7 @@ CH_REGISTRY: dict[str, str] = {
     "Swansea City": "04305508",       # SWANSEA CITY FOOTBALL 2002 LIMITED
     "Tottenham Hotspur": "01706358",  # TOTTENHAM HOTSPUR LIMITED (group reporting entity)
     "Watford": "00104194",            # WATFORD ASSOCIATION FOOTBALL CLUB LIMITED, inc. 1909
-    "West Brom": "03295063",          # WEST BROMWICH ALBION FOOTBALL CLUB LIMITED
+    "West Brom": "07230595",          # WEST BROMWICH ALBION GROUP LIMITED (consolidated)
     "West Ham": "00066516",           # WEST HAM UNITED FOOTBALL CLUB LIMITED, inc. 1900
     "Wolves": "01989823",             # WOLVERHAMPTON WANDERERS FC (1986) LIMITED
 }

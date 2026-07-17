@@ -108,9 +108,48 @@ def layer_b() -> None:
     else:
         open_item("B", "player-level reconciliation", "tm_player_seasons.csv not yet built")
 
-    open_item("B", "financial statements (revenue/wages/EBITDA/debt)",
-              "Companies House API key not yet provided; Deloitte Money League "
-              "reconciliation deferred until financials land")
+    # Financial layer (Companies House OCR)
+    fin_path = PROCESSED / "ch_financials.csv"
+    panel_path = PROCESSED / "panel.csv"
+    if fin_path.exists() and panel_path.exists():
+        import yaml
+        panel = pd.read_csv(panel_path)
+        pl = panel[panel.league == "premier-league"]
+        cov = pl.revenue_gbp.notna().mean()
+        check("B", "PL revenue coverage = 100%", cov == 1.0, f"{cov:.0%}")
+        w2r = pl.wage_to_revenue.dropna()
+        check("B", "wage-to-revenue in [0.15, 1.7] (sector-plausible)",
+              w2r.between(0.15, 1.7).all(),
+              f"median {w2r.median():.2f}, n={len(w2r)}")
+        fin = pd.read_csv(fin_path)
+        bm = yaml.safe_load((HERE / "ch_benchmarks.yaml").read_text())
+        fails = []
+        for b in bm["benchmarks"]:
+            row = fin[(fin.club == b["club"]) & (fin.fy_end == b["fy_end"])]
+            ok_b = (len(row) and pd.notna(row.iloc[0].revenue) and
+                    abs(row.iloc[0].revenue - b["revenue"]) / b["revenue"]
+                    <= bm["tolerance_pct"] / 100)
+            if not ok_b:
+                fails.append(b["club"])
+        check("B", "cited public revenue benchmarks (4 clubs)", not fails, str(fails))
+        # scope: filings feeding the panel (PL club-seasons). Championship-era
+        # filings are retained in ch_financials.csv with their flags but are
+        # not panel inputs.
+        fin["season"] = pd.to_datetime(fin.fy_end).dt.year.map(
+            lambda y: f"{y - 1}-{y}")
+        pl_keys = set(map(tuple, pl[["canonical", "season"]].values))
+        relevant = fin[[(c, s) in pl_keys for c, s in zip(fin.club, fin.season)]]
+        n_mm = (relevant.prior_check == "MISMATCH").sum()
+        check("B", "no hard prior-year mismatches in panel-relevant filings",
+              n_mm == 0, f"{n_mm} flagged")
+    open_item("B", "French club financials (DNCG annual reports)",
+              "not in Companies House; separate cited-extraction step — "
+              "financial features are PL-only until then")
+    open_item("B", "staff-costs measure caveat",
+              "20/180 PL club-seasons lack a machine-readable total staff "
+              "costs row; where only 'wages and salaries' was readable it is "
+              "used (excludes social security/pensions) — flagged per row in "
+              "ch_financials.csv")
 
 
 def layer_c() -> None:

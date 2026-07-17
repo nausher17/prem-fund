@@ -262,6 +262,57 @@ def macro_block(macro: pd.DataFrame, seasons: list[str]) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def financial_block(seasons: list[str]) -> pd.DataFrame:
+    """Companies House OCR financials (UK clubs only; French clubs pending
+    DNCG — columns stay NaN for them, documented in the validation report).
+
+    fy -> season mapping: club financial years end Apr..Aug, covering the
+    season that finished that summer (fy ending 2024-06-30 = season 2023-24).
+    Revenue growth is computed on the filings table itself so relegation
+    seasons still anchor the growth of a club's return year correctly.
+    """
+    path = PROCESSED / "ch_financials.csv"
+    if not path.exists():
+        log.warning("ch_financials.csv missing — panel built without "
+                    "financial-statement features")
+        return pd.DataFrame(columns=["league", "season", "canonical"])
+    fin = pd.read_csv(path)
+    fin = fin[fin["status"].str.startswith(("ok",))].copy()
+    ends = pd.to_datetime(fin["fy_end"])
+    bad_months = ~ends.dt.month.between(4, 8)
+    if bad_months.any():
+        log.warning("%d filings with financial years ending outside Apr-Aug "
+                    "dropped from season mapping: %s", bad_months.sum(),
+                    fin.loc[bad_months, ["club", "fy_end"]].values.tolist())
+        fin = fin[~bad_months]
+        ends = ends[~bad_months]
+    fin["season"] = ends.dt.year.map(lambda y: f"{y - 1}-{y}")
+    # duplicates (year-end changes produced overlapping filings): keep the
+    # later, fuller filing
+    fin = (fin.sort_values(["club", "season", "fy_end"])
+              .drop_duplicates(["club", "season"], keep="last"))
+    fin = fin.sort_values(["club", "season"])
+    fin["revenue_growth_yoy"] = fin.groupby("club")["revenue"].pct_change()
+    # growth only valid across consecutive seasons
+    year = fin["season"].str.slice(0, 4).astype(int)
+    consecutive = year.diff() == 1
+    fin.loc[~consecutive.fillna(False), "revenue_growth_yoy"] = float("nan")
+
+    out = fin.rename(columns={
+        "club": "canonical",
+        "revenue": "revenue_gbp",
+        "staff_costs": "staff_costs_gbp",
+        "operating_result": "operating_result_gbp",
+        "result_for_year": "result_for_year_gbp",
+    })[["canonical", "season", "revenue_gbp", "staff_costs_gbp",
+        "operating_result_gbp", "result_for_year_gbp", "revenue_growth_yoy"]]
+    out["wage_to_revenue"] = out["staff_costs_gbp"] / out["revenue_gbp"]
+    out["operating_margin"] = out["operating_result_gbp"] / out["revenue_gbp"]
+    out["log_revenue"] = np.log(out["revenue_gbp"])
+    out.insert(0, "league", "premier-league")
+    return out[out["season"].isin(seasons)]
+
+
 LAG_FEATURES = ["ppg", "position", "points", "gd_pg", "total_market_value_eur_m",
                 "net_spend_eur_m", "minutes_weighted_age", "squad_mean_age",
                 "newly_promoted", "ucl_spot"]
@@ -301,6 +352,8 @@ def build() -> pd.DataFrame:
     panel = panel.merge(status_block(panel, membership),
                         on=["league", "season", "canonical"], how="left")
     panel = panel.merge(macro_block(d["macro"], PANEL_SEASONS), on="season", how="left")
+    panel = panel.merge(financial_block(PANEL_SEASONS),
+                        on=["league", "season", "canonical"], how="left")
     panel = add_lags(panel)
     panel["coi_flag"] = panel["coi_flag"].fillna(0).astype(int)
     return panel.sort_values(["league", "season", "position"], ignore_index=True)
@@ -320,8 +373,11 @@ def main() -> int:
     print(f"COI-flagged rows: {int(panel.coi_flag.sum())} "
           f"(Chelsea + Strasbourg club-seasons)")
     print(f"MCO club-seasons: {int(panel.mco_flag.sum())}")
-    print("NOTE: financial-statement block (revenue, wages, EBITDA, debt) "
-          "pending COMPANIES_HOUSE_API_KEY — columns intentionally absent.")
+    pl_mask = panel.league == "premier-league"
+    print(f"Financials (PL only): revenue {int(panel.loc[pl_mask, 'revenue_gbp'].notna().sum())}"
+          f"/{int(pl_mask.sum())}, wage-to-revenue "
+          f"{int(panel.loc[pl_mask, 'wage_to_revenue'].notna().sum())}/{int(pl_mask.sum())}. "
+          "French clubs pending DNCG (documented limitation).")
     return 0
 
 
