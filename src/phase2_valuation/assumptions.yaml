@@ -1,0 +1,60 @@
+# Phase 2 valuation assumptions — every number that drives a valuation lives
+# here (assumptions are data, not code). Each entry carries a rationale;
+# user-approved 2026-07-17. Sensitivity ranges are exercised in the outputs.
+
+wacc:
+  # club discount rate = risk_free + equity_risk_premium + size_illiquidity
+  #                      + tier_adjustment
+  risk_free:
+    source: "uk_gilt_10y / fr_oat_10y season averages from data/processed/macro_monthly.csv (FRED); club's league determines the curve"
+    method: latest_season_average
+  equity_risk_premium:
+    value: 0.05
+    rationale: "long-run UK/EU equity premium consensus (Dimson-Marsh-Staunton range 3.5-5.5%); mid-upper given sport concentration risk"
+  size_illiquidity_premium:
+    value: 0.03
+    rationale: "private, illiquid single-asset sales with thin buyer pool; consistent with private-company discounts (20-30% value equivalent)"
+  tier_adjustment:
+    big_six: -0.01          # deeper global buyer pool, trophy liquidity
+    newly_promoted: 0.02    # relegation risk concentration
+    rationale: "user-approved 2026-07-17; sensitivity-tested +/-1pp"
+  big_six: [Arsenal, Chelsea, Liverpool, Manchester City, Manchester United, Tottenham Hotspur]
+
+projection:
+  horizon_years: 10
+  terminal_growth: 0.02
+  terminal_growth_rationale: "long-run nominal GDP-ish growth; below broadcast-rights CAGR to stay conservative"
+  base_revenue_growth:
+    method: "club-level trailing panel revenue CAGR, shrunk 50% toward the league median (short panel, mean reversion)"
+  scenario_transition_probabilities:
+    method: "estimated from panel 2015-24 league-position transition frequencies by current-position band — computed in transitions.py, never hand-set"
+  cost_structure:
+    wage_to_revenue:
+      method: "club's own 3yr mean where available, else league median from panel"
+      cap: 0.85
+      cap_rationale: "UEFA squad-cost rule glide path (70% target) makes sustained >85% non-viable"
+    other_costs_share_of_revenue:
+      value: 0.25
+      rationale: "operating costs ex-wages ex-player-amortisation, calibrated on extracted operating margins"
+    fcf_conversion_of_ebitda:
+      value: 0.60
+      rationale: "capex + working capital drag; conservative vs listed-club disclosures (MUFC plc)"
+
+scenarios:
+  # revenue uplifts applied when a scenario path is active, calibrated on
+  # panel deltas (UCL group-stage revenue jump; relegation with parachutes)
+  ucl_qualification_revenue_uplift: 0.30
+  ucl_uplift_rationale: "median PL revenue delta for clubs entering UCL in panel (~25-35%: broadcast + matchday + sponsor kickers)"
+  relegation_revenue_haircut: -0.45
+  relegation_rationale: "panel-observed PL->Championship revenue falls of 40-55% net of parachute payments"
+
+comps:
+  # deal values verified per-transaction in comps.csv with citations;
+  # league/UCL-status multiple adjustments estimated within comps.py
+  ev_basis: "enterprise value where reported; equity value flagged where debt undisclosed"
+
+ucl_option:
+  model: binomial
+  model_rationale: "discrete annual qualification events map naturally to a lattice; MC reserved for Phase 4 portfolio paths"
+  underlying: "PV of UCL revenue uplift stream (3yr persistence assumed, panel-calibrated)"
+  volatility: "club league-position volatility from panel (std of season-end position), mapped to qualification-probability variance"
