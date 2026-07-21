@@ -114,7 +114,7 @@ scratch (from cache where scrapes are involved). Phase archives are written to
       PL revenue 180/180 club-seasons, wage-to-revenue 155/180; open items — French club
       financials via DNCG, staff-costs measure caveat — recorded in
       `data/validation/phase1_validation_report.md`)*
-- [ ] Phase 2 — Valuation engine
+- [x] Phase 2 — Valuation engine *(complete 2026-07-17: DCF over empirical Markov chain, 9-deal comps, UCL binomial option, Forbes trophy-premium benchmark — median Forbes/DCF 2.98x)*
 - [ ] Phase 3 — Hypothesis testing
 - [ ] Phase 4 — Portfolio construction & risk
 - [ ] Phase 5 — BlueCo case study
