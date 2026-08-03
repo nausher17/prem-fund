@@ -115,7 +115,7 @@ scratch (from cache where scrapes are involved). Phase archives are written to
       financials via DNCG, staff-costs measure caveat — recorded in
       `data/validation/phase1_validation_report.md`)*
 - [x] Phase 2 — Valuation engine *(complete 2026-07-17: DCF over empirical Markov chain, 9-deal comps, UCL binomial option, Forbes trophy-premium benchmark — median Forbes/DCF 2.98x)*
-- [ ] Phase 3 — Hypothesis testing
+- [x] Phase 3 — Hypothesis testing *(complete 2026-07-19: H4 supported — lagged PPG → revenue growth, p=0.048, OOS R²=0.54; H2/H3 defensible nulls; H1 null with documented survivorship caveat)*
 - [ ] Phase 4 — Portfolio construction & risk
 - [ ] Phase 5 — BlueCo case study
 - [ ] Phase 6 — Dashboard & reporting

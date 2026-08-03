@@ -1,0 +1,16 @@
+target,model,oos_r2,oos_rmse,n_train,n_test
+revenue_growth_yoy,naive_train_mean,-0.0095,1.1024,119,58
+revenue_growth_yoy,lasso,0.5364,0.747,119,58
+revenue_growth_yoy,random_forest,0.4864,0.7863,119,58
+revenue_growth_yoy,gbm,0.128,1.0246,119,58
+revenue_growth_yoy,ensemble_mean,0.4222,0.834,119,58
+squad_value_growth_yoy,naive_train_mean,-0.1681,0.2569,173,102
+squad_value_growth_yoy,lasso,-65.072,1.9318,173,102
+squad_value_growth_yoy,random_forest,-0.3837,0.2796,173,102
+squad_value_growth_yoy,gbm,-0.5664,0.2974,173,102
+squad_value_growth_yoy,ensemble_mean,-5.5327,0.6074,173,102
+wage_to_revenue,naive_train_mean,-0.0134,0.1446,103,52
+wage_to_revenue,lasso,-0.0151,0.1447,103,52
+wage_to_revenue,random_forest,0.073,0.1383,103,52
+wage_to_revenue,gbm,-0.1965,0.1571,103,52
+wage_to_revenue,ensemble_mean,0.0004,0.1436,103,52
