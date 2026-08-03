@@ -1,0 +1,4 @@
+strategy,ann_return,sharpe,max_drawdown
+long_only,0.1439,0.773,0.0711
+long_short,0.0542,0.283,0.1641
+equal_weight,0.1245,0.734,0.1509
