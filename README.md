@@ -117,5 +117,5 @@ scratch (from cache where scrapes are involved). Phase archives are written to
 - [x] Phase 2 — Valuation engine *(complete 2026-07-17: DCF over empirical Markov chain, 9-deal comps, UCL binomial option, Forbes trophy-premium benchmark — median Forbes/DCF 2.98x)*
 - [x] Phase 3 — Hypothesis testing *(complete 2026-07-19: H4 supported — lagged PPG → revenue growth, p=0.048, OOS R²=0.54; H2/H3 defensible nulls; H1 null with documented survivorship caveat)*
 - [x] Phase 4 — Portfolio construction & risk *(complete 2026-07-19: max-Sharpe 23.5% E[r]/Sharpe 1.78 vs 15% target; LW shrinkage 0.53; C++ MC 4.8x vs NumPy at 5M paths; long-only value backtest 14.4%/yr Sharpe 0.77 vs EW 12.5%)*
-- [ ] Phase 5 — BlueCo case study
-- [ ] Phase 6 — Dashboard & reporting
+- [x] Phase 5 — BlueCo case study *(complete 2026-07-19: 16-player Chelsea↔Strasbourg network; squad value +277% vs matched control post-BlueCo; explains H2 null)*
+- [x] Phase 6 — Dashboard & reporting *(complete 2026-07-19: Streamlit app — `streamlit run src/phase6_dashboard/app.py` — final report, CV assets)*

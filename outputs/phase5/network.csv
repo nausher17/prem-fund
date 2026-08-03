@@ -1,0 +1,22 @@
+season,move,player,age,position,market_value_eur_m,fee_raw,fee_eur_m,is_loan
+2023-2024,Chelsea->Strasbourg,Andrey Santos,19,Central Midfield,14.0,loan transfer,,True
+2023-2024,Chelsea->Strasbourg,Ângelo,18,Right Winger,13.0,loan transfer,,True
+2024-2025,Strasbourg->Chelsea,Andrey Santos,21,Defensive Midfield,25.0,End of loan 31/05/2025,,True
+2024-2025,Chelsea->Strasbourg,Caleb Wiley,19,Left-Back,5.0,loan transfer,,True
+2024-2025,Strasbourg->Chelsea,Caleb Wiley,20,Left-Back,8.0,End of loan 02/02/2025,,True
+2024-2025,Chelsea->Strasbourg,Diego Moreira,20,Left Midfield,3.0,€8.50m,8.5,False
+2024-2025,Chelsea->Strasbourg,Djordje Petrovic,24,Goalkeeper,20.0,loan transfer,,True
+2024-2025,Strasbourg->Chelsea,Ângelo,19,Right Winger,15.0,End of loan 30/06/2024,,True
+2025-2026,Chelsea->Strasbourg,Aarón Anselmino,20,Centre-Back,12.0,loan transfer,,True
+2025-2026,Chelsea->Strasbourg,Ben Chilwell,28,Left-Back,15.0,free transfer,,False
+2025-2026,Chelsea->Strasbourg,David Datro Fofana,23,Centre-Forward,5.0,loan transfer,,True
+2025-2026,Strasbourg->Chelsea,Djordje Petrovic,25,Goalkeeper,20.0,End of loan 30/06/2025,,True
+2025-2026,Chelsea->Strasbourg,Ishé Samuels-Smith,19,Left-Back,0.7000000000000001,free transfer,,False
+2025-2026,Strasbourg->Chelsea,Ishé Samuels-Smith,19,Left-Back,0.7000000000000001,free transfer,,False
+2025-2026,Chelsea->Strasbourg,Kendry Páez,18,Attacking Midfield,10.0,loan transfer,,True
+2025-2026,Strasbourg->Chelsea,Kendry Páez,18,Attacking Midfield,10.0,End of loan 29/01/2026,,True
+2025-2026,Chelsea->Strasbourg,Mamadou Sarr,19,Centre-Back,20.0,loan transfer,,True
+2025-2026,Strasbourg->Chelsea,Mamadou Sarr,19,Centre-Back,20.0,€14.00m,14.0,False
+2025-2026,Strasbourg->Chelsea,Mamadou Sarr,20,Centre-Back,25.0,End of loan 02/02/2026,,True
+2025-2026,Chelsea->Strasbourg,Mathis Amougou,19,Central Midfield,10.0,€14.50m,14.5,False
+2025-2026,Chelsea->Strasbourg,Mike Penders,19,Goalkeeper,12.0,loan transfer,,True

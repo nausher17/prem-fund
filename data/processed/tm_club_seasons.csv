@@ -179,6 +179,46 @@ premier-league,2023-2024,Fulham FC,931,fc-fulham,35,26.9,31,10.98,384.35
 premier-league,2023-2024,Burnley FC,1132,fc-burnley,39,25.3,30,7.01,273.48
 premier-league,2023-2024,Sheffield United,350,sheffield-united,45,24.7,27,3.39,152.35
 premier-league,2023-2024,Luton Town,1031,luton-town,46,25.7,22,3.06,140.9
+premier-league,2024-2025,Manchester City,281,manchester-city,44,25.6,27,30.86,1360.0
+premier-league,2024-2025,Chelsea FC,631,fc-chelsea,58,22.4,32,20.59,1190.0
+premier-league,2024-2025,Arsenal FC,11,fc-arsenal,42,24.5,26,27.58,1160.0
+premier-league,2024-2025,Liverpool FC,31,fc-liverpool,35,24.7,21,27.17,950.95
+premier-league,2024-2025,Manchester United,985,manchester-united,49,24.0,29,16.84,825.0
+premier-league,2024-2025,Tottenham Hotspur,148,tottenham-hotspur,41,24.0,23,18.96,777.3
+premier-league,2024-2025,Aston Villa,405,aston-villa,41,25.2,24,16.6,680.55
+premier-league,2024-2025,Newcastle United,762,newcastle-united,36,27.5,15,18.82,677.53
+premier-league,2024-2025,Brighton & Hove Albion,1237,brighton-amp-hove-albion,49,24.2,33,13.62,667.58
+premier-league,2024-2025,Crystal Palace,873,crystal-palace,40,26.2,18,13.17,526.85
+premier-league,2024-2025,AFC Bournemouth,989,afc-bournemouth,39,24.7,25,13.3,518.6
+premier-league,2024-2025,Nottingham Forest,703,nottingham-forest,33,26.8,23,14.58,481.3
+premier-league,2024-2025,Wolverhampton Wanderers,543,wolverhampton-wanderers,44,25.3,34,9.84,433.05
+premier-league,2024-2025,Brentford FC,1148,fc-brentford,38,24.4,28,11.26,427.85
+premier-league,2024-2025,West Ham United,379,west-ham-united,29,28.0,19,13.82,400.7
+premier-league,2024-2025,Everton FC,29,fc-everton,39,25.8,21,9.31,363.23
+premier-league,2024-2025,Fulham FC,931,fc-fulham,28,27.7,21,12.94,362.35
+premier-league,2024-2025,Southampton FC,180,fc-southampton,42,25.3,23,7.38,310.05
+premier-league,2024-2025,Ipswich Town,677,ipswich-town,35,26.6,17,7.72,270.1
+premier-league,2024-2025,Leicester City,1003,leicester-city,40,25.3,24,6.33,253.35
+premier-league,2025-2026,Manchester City,281,manchester-city,43,25.2,24,32.34,1390.0
+premier-league,2025-2026,Arsenal FC,11,fc-arsenal,40,23.9,20,33.15,1330.0
+premier-league,2025-2026,Chelsea FC,631,fc-chelsea,42,22.4,22,27.43,1150.0
+premier-league,2025-2026,Liverpool FC,31,fc-liverpool,45,24.0,28,21.79,980.5
+premier-league,2025-2026,Tottenham Hotspur,148,tottenham-hotspur,45,24.0,28,18.08,813.4
+premier-league,2025-2026,Manchester United,985,manchester-united,34,24.9,22,22.78,774.6
+premier-league,2025-2026,Crystal Palace,873,crystal-palace,41,25.2,22,17.13,702.5
+premier-league,2025-2026,Newcastle United,762,newcastle-united,37,26.6,14,18.86,697.7
+premier-league,2025-2026,AFC Bournemouth,989,afc-bournemouth,39,25.0,29,17.46,680.98
+premier-league,2025-2026,Nottingham Forest,703,nottingham-forest,42,25.5,30,15.21,638.68
+premier-league,2025-2026,Brighton & Hove Albion,1237,brighton-amp-hove-albion,42,25.3,26,14.88,625.0
+premier-league,2025-2026,Aston Villa,405,aston-villa,44,25.1,22,13.95,613.98
+premier-league,2025-2026,Brentford FC,1148,fc-brentford,40,24.4,27,12.59,503.58
+premier-league,2025-2026,West Ham United,379,west-ham-united,40,26.6,26,11.74,469.73
+premier-league,2025-2026,Everton FC,29,fc-everton,33,25.6,15,13.92,459.25
+premier-league,2025-2026,Sunderland AFC,289,afc-sunderland,43,24.6,31,10.39,446.68
+premier-league,2025-2026,Wolverhampton Wanderers,543,wolverhampton-wanderers,42,25.0,31,9.28,389.85
+premier-league,2025-2026,Fulham FC,931,fc-fulham,30,27.4,23,12.54,376.2
+premier-league,2025-2026,Leeds United,399,leeds-united,33,26.1,23,11.34,374.2
+premier-league,2025-2026,Burnley FC,1132,fc-burnley,43,25.8,31,5.49,236.0
 ligue-1,2015-2016,Paris Saint-Germain,583,fc-paris-saint-germain,35,25.4,20,12.47,436.3
 ligue-1,2015-2016,AS Monaco,162,as-monaco,39,23.8,26,5.83,227.4
 ligue-1,2015-2016,Olympique Lyon,1041,olympique-lyon,33,25.5,15,5.04,166.3
@@ -357,3 +397,39 @@ ligue-1,2023-2024,Stade Brestois 29,3911,stade-brest-29,31,25.9,10,3.71,115.15
 ligue-1,2023-2024,Le Havre AC,738,ac-le-havre,35,25.1,22,2.07,72.5
 ligue-1,2023-2024,FC Metz,347,fc-metz,37,25.5,27,1.77,65.4
 ligue-1,2023-2024,Clermont Foot 63,3524,clermont-foot-63,36,25.2,21,1.7,61.35
+ligue-1,2024-2025,Paris Saint-Germain,583,fc-paris-saint-germain,34,23.6,22,33.59,1140.0
+ligue-1,2024-2025,AS Monaco,162,as-monaco,37,23.6,23,11.11,411.15
+ligue-1,2024-2025,Olympique Marseille,244,olympique-marseille,40,24.9,29,8.95,358.0
+ligue-1,2024-2025,LOSC Lille,1082,losc-lille,40,25.4,24,8.41,336.55
+ligue-1,2024-2025,Olympique Lyon,1041,olympique-lyon,37,26.0,27,8.37,309.85
+ligue-1,2024-2025,RC Strasbourg Alsace,667,rc-strassburg-alsace,42,22.2,28,7.33,307.85
+ligue-1,2024-2025,Stade Rennais FC,273,fc-stade-rennes,43,25.2,27,6.85,294.7
+ligue-1,2024-2025,OGC Nice,417,ogc-nizza,41,24.4,25,5.54,227.05
+ligue-1,2024-2025,RC Lens,826,rc-lens,43,25.1,23,5.15,221.45
+ligue-1,2024-2025,Stade Reims,1421,stade-reims,40,24.0,33,3.81,152.5
+ligue-1,2024-2025,FC Toulouse,415,fc-toulouse,34,24.4,23,3.58,121.6
+ligue-1,2024-2025,FC Nantes,995,fc-nantes,34,26.6,20,3.37,114.65
+ligue-1,2024-2025,Stade Brestois 29,3911,stade-brest-29,37,25.6,14,2.99,110.65
+ligue-1,2024-2025,AJ Auxerre,290,aj-auxerre,39,24.6,22,2.23,86.9
+ligue-1,2024-2025,AS Saint-Étienne,618,as-saint-etienne,39,25.3,18,2.09,81.6
+ligue-1,2024-2025,Le Havre AC,738,ac-le-havre,42,25.1,23,1.68,70.55
+ligue-1,2024-2025,Montpellier HSC,969,montpellier-hsc,40,25.2,23,1.65,65.85
+ligue-1,2024-2025,Angers SCO,1420,sco-angers,38,25.8,22,1.36,51.65
+ligue-1,2025-2026,Paris Saint-Germain,583,fc-paris-saint-germain,37,22.4,19,37.29,1380.0
+ligue-1,2025-2026,Olympique Marseille,244,olympique-marseille,48,25.3,35,10.1,484.8
+ligue-1,2025-2026,RC Strasbourg Alsace,667,rc-strassburg-alsace,46,22.0,29,10.13,466.08
+ligue-1,2025-2026,AS Monaco,162,as-monaco,38,24.5,26,11.97,454.68
+ligue-1,2025-2026,Olympique Lyon,1041,olympique-lyon,41,24.1,32,8.65,354.65
+ligue-1,2025-2026,Stade Rennais FC,273,fc-stade-rennes,41,24.3,22,8.14,333.6
+ligue-1,2025-2026,LOSC Lille,1082,losc-lille,43,24.7,26,6.85,294.5
+ligue-1,2025-2026,RC Lens,826,rc-lens,37,25.9,14,7.21,266.6
+ligue-1,2025-2026,OGC Nice,417,ogc-nizza,49,24.2,31,4.4,215.55
+ligue-1,2025-2026,FC Toulouse,415,fc-toulouse,37,23.1,20,5.37,198.6
+ligue-1,2025-2026,Paris FC,10004,paris-fc,38,27.8,21,4.06,154.2
+ligue-1,2025-2026,Angers SCO,1420,sco-angers,36,24.4,18,3.82,137.6
+ligue-1,2025-2026,FC Lorient,1158,fc-lorient,36,24.7,24,3.57,128.35
+ligue-1,2025-2026,FC Nantes,995,fc-nantes,38,26.4,20,3.23,122.6
+ligue-1,2025-2026,AJ Auxerre,290,aj-auxerre,40,24.0,21,3.05,122.0
+ligue-1,2025-2026,Stade Brestois 29,3911,stade-brest-29,32,24.9,11,2.98,95.35
+ligue-1,2025-2026,FC Metz,347,fc-metz,40,24.7,29,2.3,91.8
+ligue-1,2025-2026,Le Havre AC,738,ac-le-havre,40,24.5,19,1.99,79.45
