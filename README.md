@@ -16,7 +16,7 @@ and construction/backtesting of an optimised club portfolio targeting a 15% IRR.
 
 ## Conflict-of-interest disclosure
 
-The author is a **Chelsea FC supporter**. Chelsea and RC Strasbourg (both owned by
+I am a **Chelsea FC supporter**. Chelsea and RC Strasbourg (both owned by
 BlueCo, and jointly the subject of the Phase 5 multi-club-ownership case study) are
 **flagged in the dataset with `coi_flag = 1`, not excluded**. All analysis touching
 these clubs should be read with this disclosure in mind; the flag allows any reader to
